@@ -1,4 +1,6 @@
-html, body, #___gatsby {
+html,
+body,
+#___gatsby {
   height: 100%;
 }
 
@@ -30,7 +32,7 @@ h1 {
 @keyframes zoomIn {
   from {
     opacity: 0;
-    transform: scale3d(.3, .3, .3);
+    transform: scale3d(0.3, 0.3, 0.3);
   }
 
   50% {
