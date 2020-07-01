@@ -2,7 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-import SEO from "../components/Seo"
+import SEO from "../components/Xama"
 
 const Home = () => {
   const { logo } = useStaticQuery(
