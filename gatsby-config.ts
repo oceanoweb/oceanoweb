@@ -7,7 +7,7 @@ import type { GatsbyConfig } from "gatsby"
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `Oceano Web`,
-    description: `Oceano Web Website.`,
+    description: `Oceano Web`,
     author: `@marquinhusgonc`,
     siteUrl: `https://oceanoweb.com.br`,
   },
@@ -16,6 +16,7 @@ const config: GatsbyConfig = {
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
   plugins: [
+    `gatsby-plugin-react-helmet`,
     "gatsby-plugin-styled-components",
     {
       resolve: `gatsby-plugin-google-gtag`,
@@ -26,12 +27,17 @@ const config: GatsbyConfig = {
     "gatsby-plugin-image",
     "gatsby-plugin-sitemap",
     {
-      resolve: "gatsby-plugin-manifest",
+      resolve: `gatsby-plugin-manifest`,
       options: {
-        icon: "src/images/icon.png",
+        name: `gatsby-starter-default`,
+        short_name: `starter`,
+        start_url: `/`,
+        background_color: `#25AAE1`,
+        theme_color: `#25AAE1`,
+        display: `minimal-ui`,
+        icon: `src/images/logo.png`, // This path is relative to the root of the site.
       },
     },
-    "gatsby-plugin-mdx",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
