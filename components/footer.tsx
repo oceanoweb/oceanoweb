@@ -4,17 +4,22 @@ import Image from "next/image"
 import { useLanguage } from "@/lib/language-context"
 import { BrandIcon } from "@/components/brand-icon"
 import { siInstagram, siLinkedin, siWhatsapp } from "simple-icons/icons"
+import {
+  CONTACT_EMAIL,
+  INSTAGRAM_URL,
+  LINKEDIN_URL,
+  SITE_DOMAIN,
+  WHATSAPP_DISPLAY,
+  WHATSAPP_LINK,
+} from "@/lib/site-config"
 
 export function Footer() {
   const { t } = useLanguage()
-  const whatsappNumber = "551199990000"
-  const whatsappMessage = "Ola! Quero saber mais sobre a Oceano Web."
-  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`
 
   const socialLinks = [
-    { icon: siLinkedin, href: "https://br.linkedin.com/company/oceano-web", label: "LinkedIn" },
-    { icon: siInstagram, href: "https://www.instagram.com/oceano_web", label: "Instagram" },
-    { icon: siWhatsapp, href: whatsappLink, label: "WhatsApp" },
+    { icon: siLinkedin, href: LINKEDIN_URL, label: "LinkedIn" },
+    { icon: siInstagram, href: INSTAGRAM_URL, label: "Instagram" },
+    { icon: siWhatsapp, href: WHATSAPP_LINK, label: "WhatsApp" },
   ]
 
   const navLinks = [
@@ -102,9 +107,9 @@ export function Footer() {
               {t.footer.contactTitle}
             </h3>
             <ul className="mt-4 flex flex-col gap-3">
-              <li className="text-sm text-muted-foreground">contato@oceanoweb.com</li>
-              <li className="text-sm text-muted-foreground">+55 (11) 9999-0000</li>
-              <li className="text-sm text-muted-foreground">oceanoweb.com</li>
+              <li className="text-sm text-muted-foreground">{CONTACT_EMAIL}</li>
+              <li className="text-sm text-muted-foreground">{WHATSAPP_DISPLAY}</li>
+              <li className="text-sm text-muted-foreground">{SITE_DOMAIN}</li>
             </ul>
           </div>
         </div>

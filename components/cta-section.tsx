@@ -1,22 +1,42 @@
 "use client"
 
 import React, { useState } from "react"
-import { ArrowRight, Mail, CheckCircle2 } from "lucide-react"
+import { ArrowRight, Mail, CheckCircle2, AlertCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useLanguage } from "@/lib/language-context"
 import { BrandIcon } from "@/components/brand-icon"
 import { siWhatsapp } from "simple-icons/icons"
+import { sendContactEmail } from "@/lib/send-email"
+import { CONTACT_EMAIL, WHATSAPP_DISPLAY, WHATSAPP_LINK } from "@/lib/site-config"
 
 export function CtaSection() {
   const [submitted, setSubmitted] = useState(false)
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState<string | null>(null)
   const { t } = useLanguage()
-  const whatsappNumber = "551199990000"
-  const whatsappMessage = "Ola! Quero saber mais sobre a Oceano Web."
-  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    setSubmitted(true)
+    setLoading(true)
+    setError(null)
+
+    const formData = new FormData(e.currentTarget)
+    const data = {
+      name: formData.get("name") as string,
+      email: formData.get("email") as string,
+      company: (formData.get("company") as string) || undefined,
+      message: formData.get("message") as string,
+    }
+
+    try {
+      await sendContactEmail(data)
+      setSubmitted(true)
+    } catch (err) {
+      setError("Erro ao enviar mensagem. Tente novamente.")
+      console.error(err)
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -45,10 +65,10 @@ export function CtaSection() {
                 <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
                   <Mail className="h-5 w-5 text-primary" />
                 </div>
-                <span className="text-sm text-muted-foreground">contato@oceanoweb.com</span>
+                <span className="text-sm text-muted-foreground">{CONTACT_EMAIL}</span>
               </div>
               <a
-                href={whatsappLink}
+                href={WHATSAPP_LINK}
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center gap-3 text-sm text-muted-foreground transition-colors hover:text-primary"
@@ -57,7 +77,7 @@ export function CtaSection() {
                 <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
                   <BrandIcon icon={siWhatsapp} className="h-5 w-5 text-primary" />
                 </div>
-                +55 (11) 9999-0000
+                {WHATSAPP_DISPLAY}
               </a>
             </div>
           </div>
@@ -77,6 +97,12 @@ export function CtaSection() {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="flex flex-col gap-5">
+                {error && (
+                  <div className="flex gap-3 rounded-lg border border-red-200 bg-red-50 p-4">
+                    <AlertCircle className="h-5 w-5 shrink-0 text-red-600" />
+                    <p className="text-sm text-red-800">{error}</p>
+                  </div>
+                )}
                 <div className="grid gap-5 sm:grid-cols-2">
                   <div className="flex flex-col gap-2">
                     <label htmlFor="name" className="text-sm font-medium text-foreground">
@@ -84,10 +110,12 @@ export function CtaSection() {
                     </label>
                     <input
                       id="name"
+                      name="name"
                       type="text"
                       required
+                      disabled={loading}
                       placeholder={t.cta.placeholderName}
-                      className="rounded-lg border border-border bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+                      className="rounded-lg border border-border bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary disabled:opacity-50 disabled:cursor-not-allowed"
                     />
                   </div>
                   <div className="flex flex-col gap-2">
@@ -96,10 +124,12 @@ export function CtaSection() {
                     </label>
                     <input
                       id="email"
+                      name="email"
                       type="email"
                       required
+                      disabled={loading}
                       placeholder={t.cta.placeholderEmail}
-                      className="rounded-lg border border-border bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+                      className="rounded-lg border border-border bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary disabled:opacity-50 disabled:cursor-not-allowed"
                     />
                   </div>
                 </div>
@@ -109,9 +139,11 @@ export function CtaSection() {
                   </label>
                   <input
                     id="company"
+                    name="company"
                     type="text"
+                    disabled={loading}
                     placeholder={t.cta.placeholderCompany}
-                    className="rounded-lg border border-border bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+                    className="rounded-lg border border-border bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary disabled:opacity-50 disabled:cursor-not-allowed"
                   />
                 </div>
                 <div className="flex flex-col gap-2">
@@ -120,14 +152,16 @@ export function CtaSection() {
                   </label>
                   <textarea
                     id="message"
+                    name="message"
                     required
+                    disabled={loading}
                     rows={4}
                     placeholder={t.cta.placeholderMessage}
-                    className="rounded-lg border border-border bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary resize-none"
+                    className="rounded-lg border border-border bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary resize-none disabled:opacity-50 disabled:cursor-not-allowed"
                   />
                 </div>
-                <Button type="submit" size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 gap-2 font-medium">
-                  {t.cta.submit}
+                <Button type="submit" size="lg" disabled={loading} className="bg-primary text-primary-foreground hover:bg-primary/90 gap-2 font-medium disabled:opacity-50 disabled:cursor-not-allowed">
+                  {loading ? "Enviando..." : t.cta.submit}
                   <ArrowRight className="h-4 w-4" />
                 </Button>
               </form>

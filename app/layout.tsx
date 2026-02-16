@@ -10,6 +10,13 @@ const _spaceGrotesk = Space_Grotesk({ subsets: ['latin'], variable: '--font-spac
 export const metadata: Metadata = {
   title: 'Oceano Web | Transformacao Digital com IA & Machine Learning',
   description: 'Agencia digital especializada em transformacao digital, inteligencia artificial e machine learning. Crescimento, escala e produtividade para sua empresa.',
+  icons: {
+    icon: [
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+    ],
+    apple: [{ url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }],
+  },
 }
 
 export default function RootLayout({
