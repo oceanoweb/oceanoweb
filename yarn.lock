@@ -2131,6 +2131,11 @@ sharp@^0.34.4:
     "@img/sharp-win32-ia32" "0.34.5"
     "@img/sharp-win32-x64" "0.34.5"
 
+simple-icons@^11.15.0:
+  version "11.15.0"
+  resolved "https://registry.yarnpkg.com/simple-icons/-/simple-icons-11.15.0.tgz#b12e7b10ea8af935f45a76bfa217fdea2b1a8640"
+  integrity sha512-uDAdtIGc56YJiGpdzImENY4E+5qtHEorW11KoXiwDj4u4YSY74G+q/a9idlY8iEqrjghHGkZ/ras0jRT7JpDTQ==
+
 sonner@^1.7.1:
   version "1.7.4"
   resolved "https://registry.yarnpkg.com/sonner/-/sonner-1.7.4.tgz#4c39820db86623800a17115c8970796aa862133a"

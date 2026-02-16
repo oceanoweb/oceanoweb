@@ -1,16 +1,21 @@
 "use client"
 
-import { Linkedin, Instagram } from "lucide-react"
 import Image from "next/image"
 import { useLanguage } from "@/lib/language-context"
-
-const socialLinks = [
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Instagram, href: "#", label: "Instagram" },
-]
+import { BrandIcon } from "@/components/brand-icon"
+import { siInstagram, siLinkedin, siWhatsapp } from "simple-icons/icons"
 
 export function Footer() {
   const { t } = useLanguage()
+  const whatsappNumber = "551199990000"
+  const whatsappMessage = "Ola! Quero saber mais sobre a Oceano Web."
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`
+
+  const socialLinks = [
+    { icon: siLinkedin, href: "https://br.linkedin.com/company/oceano-web", label: "LinkedIn" },
+    { icon: siInstagram, href: "https://www.instagram.com/oceano_web", label: "Instagram" },
+    { icon: siWhatsapp, href: whatsappLink, label: "WhatsApp" },
+  ]
 
   const navLinks = [
     { label: t.nav.inicio, href: "#inicio" },
@@ -45,10 +50,12 @@ export function Footer() {
                 <a
                   key={social.label}
                   href={social.href}
+                  target="_blank"
+                  rel="noreferrer"
                   className="flex h-10 w-10 items-center justify-center rounded-lg border border-border text-muted-foreground transition-colors hover:border-primary hover:text-primary"
                   aria-label={social.label}
                 >
-                  <social.icon className="h-4 w-4" />
+                  <BrandIcon icon={social.icon} className="h-4 w-4" />
                 </a>
               ))}
             </div>

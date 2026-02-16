@@ -1,14 +1,18 @@
 "use client"
 
-import React from "react"
-import { useState } from "react"
-import { ArrowRight, Send, CheckCircle2 } from "lucide-react"
+import React, { useState } from "react"
+import { ArrowRight, Mail, CheckCircle2 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useLanguage } from "@/lib/language-context"
+import { BrandIcon } from "@/components/brand-icon"
+import { siWhatsapp } from "simple-icons/icons"
 
 export function CtaSection() {
   const [submitted, setSubmitted] = useState(false)
   const { t } = useLanguage()
+  const whatsappNumber = "551199990000"
+  const whatsappMessage = "Ola! Quero saber mais sobre a Oceano Web."
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
@@ -39,10 +43,22 @@ export function CtaSection() {
             <div className="mt-8 flex flex-col gap-4">
               <div className="flex items-center gap-3">
                 <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
-                  <Send className="h-5 w-5 text-primary" />
+                  <Mail className="h-5 w-5 text-primary" />
                 </div>
                 <span className="text-sm text-muted-foreground">contato@oceanoweb.com</span>
               </div>
+              <a
+                href={whatsappLink}
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center gap-3 text-sm text-muted-foreground transition-colors hover:text-primary"
+                aria-label="Falar no WhatsApp"
+              >
+                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+                  <BrandIcon icon={siWhatsapp} className="h-5 w-5 text-primary" />
+                </div>
+                +55 (11) 9999-0000
+              </a>
             </div>
           </div>
 
