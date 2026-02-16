@@ -60,7 +60,6 @@ out/
 
 # gatsby files
 .cache/
-public
 src/gatsby-types.d.ts
 
 # Mac files
