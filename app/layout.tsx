@@ -10,6 +10,7 @@ import {
   SITE_URL,
   WHATSAPP_DISPLAY,
 } from "@/lib/site-config"
+import { GoogleAnalytics } from "@/components/google-analytics"
 
 import "./globals.css"
 
@@ -92,6 +93,9 @@ export default function RootLayout({
 
   return (
     <html lang="pt-BR" className="scroll-smooth">
+      <head>
+        <GoogleAnalytics />
+      </head>
       <body className={`${_inter.variable} ${_spaceGrotesk.variable} font-sans antialiased`}>
         <script
           type="application/ld+json"
