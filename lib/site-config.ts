@@ -9,4 +9,4 @@ export const WHATSAPP_MESSAGE = "Ola! Quero saber mais sobre a Oceano Web."
 export const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`
 export const LINKEDIN_URL = "https://br.linkedin.com/company/oceano-web"
 export const INSTAGRAM_URL = "https://www.instagram.com/oceano_web"
-export const OG_IMAGE = "/og-image.png"
+export const OG_IMAGE = `${SITE_URL}/og-image.png`

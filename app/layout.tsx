@@ -27,6 +27,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
+    locale: "pt_BR",
     url: SITE_URL,
     title: "Oceano Web | Transformacao Digital com IA & Machine Learning",
     description:
@@ -35,6 +36,7 @@ export const metadata: Metadata = {
     images: [
       {
         url: OG_IMAGE,
+        secureUrl: OG_IMAGE,
         width: 1200,
         height: 630,
         alt: "Oceano Web",
@@ -79,6 +81,12 @@ export default function RootLayout({
       "@type": "Organization",
       name: SITE_NAME,
       url: SITE_URL,
+      logo: {
+        "@type": "ImageObject",
+        url: `${SITE_URL}/logo.jpg`,
+        width: "512",
+        height: "512",
+      },
       email: CONTACT_EMAIL,
       telephone: WHATSAPP_DISPLAY,
       sameAs: [LINKEDIN_URL, INSTAGRAM_URL],
