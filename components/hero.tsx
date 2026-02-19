@@ -56,7 +56,7 @@ export function Hero() {
 
           <div className="mt-16 grid grid-cols-3 gap-8 border-t border-border pt-8 animate-slide-up" style={{ animationDelay: "0.6s" }}>
             <div>
-              <p className="font-heading text-3xl font-bold text-primary md:text-4xl">150+</p>
+              <p className="font-heading text-3xl font-bold text-primary md:text-4xl">50+</p>
               <p className="mt-1 text-sm text-muted-foreground">{t.hero.stat1}</p>
             </div>
             <div>

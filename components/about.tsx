@@ -22,7 +22,7 @@ export function About() {
               <div className="absolute inset-0 bg-primary/10" />
             </div>
             <div className="absolute -bottom-6 -right-6 hidden rounded-2xl border border-border bg-card p-6 shadow-2xl md:block">
-              <p className="font-heading text-4xl font-bold text-primary">8+</p>
+              <p className="font-heading text-4xl font-bold text-primary">10+</p>
               <p className="text-sm text-muted-foreground">{t.about.yearsLabel}<br />{t.about.yearsLabel2}</p>
             </div>
           </div>

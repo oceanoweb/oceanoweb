@@ -9,7 +9,9 @@ import {
   INSTAGRAM_URL,
   LINKEDIN_URL,
   SITE_DOMAIN,
-  WHATSAPP_DISPLAY,
+  SITE_URL,
+  PHONE_NUMBER_DISPLAY,
+  PHONE_LINK,
   WHATSAPP_LINK,
 } from "@/lib/site-config"
 
@@ -107,9 +109,32 @@ export function Footer() {
               {t.footer.contactTitle}
             </h3>
             <ul className="mt-4 flex flex-col gap-3">
-              <li className="text-sm text-muted-foreground">{CONTACT_EMAIL}</li>
-              <li className="text-sm text-muted-foreground">{WHATSAPP_DISPLAY}</li>
-              <li className="text-sm text-muted-foreground">{SITE_DOMAIN}</li>
+              <li>
+                <a
+                  href={`mailto:${CONTACT_EMAIL}`}
+                  className="text-sm text-muted-foreground transition-colors hover:text-primary"
+                >
+                  {CONTACT_EMAIL}
+                </a>
+              </li>
+              <li>
+                <a
+                  href={PHONE_LINK}
+                  className="text-sm text-muted-foreground transition-colors hover:text-primary"
+                >
+                  {PHONE_NUMBER_DISPLAY}
+                </a>
+              </li>
+              <li>
+                <a
+                  href={SITE_URL}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-sm text-muted-foreground transition-colors hover:text-primary"
+                >
+                  {SITE_DOMAIN}
+                </a>
+              </li>
             </ul>
           </div>
         </div>

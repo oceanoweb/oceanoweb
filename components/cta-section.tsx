@@ -1,13 +1,13 @@
 "use client"
 
 import React, { useState } from "react"
-import { ArrowRight, Mail, CheckCircle2, AlertCircle } from "lucide-react"
+import { ArrowRight, Mail, CheckCircle2, AlertCircle, Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useLanguage } from "@/lib/language-context"
 import { BrandIcon } from "@/components/brand-icon"
 import { siWhatsapp } from "simple-icons/icons"
 import { sendContactEmail } from "@/lib/send-email"
-import { CONTACT_EMAIL, WHATSAPP_DISPLAY, WHATSAPP_LINK } from "@/lib/site-config"
+import { CONTACT_EMAIL, PHONE_NUMBER_DISPLAY, PHONE_LINK, WHATSAPP_LINK } from "@/lib/site-config"
 
 export function CtaSection() {
   const [submitted, setSubmitted] = useState(false)
@@ -61,12 +61,26 @@ export function CtaSection() {
             </p>
 
             <div className="mt-8 flex flex-col gap-4">
-              <div className="flex items-center gap-3">
+              <a
+                href={`mailto:${CONTACT_EMAIL}`}
+                className="flex items-center gap-3 text-sm text-muted-foreground transition-colors hover:text-primary"
+                aria-label="Enviar email para Oceano Web"
+              >
                 <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
                   <Mail className="h-5 w-5 text-primary" />
                 </div>
-                <span className="text-sm text-muted-foreground">{CONTACT_EMAIL}</span>
-              </div>
+                {CONTACT_EMAIL}
+              </a>
+              <a
+                href={PHONE_LINK}
+                className="flex items-center gap-3 text-sm text-muted-foreground transition-colors hover:text-primary"
+                aria-label="Ligar para Oceano Web"
+              >
+                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+                  <Phone className="h-5 w-5 text-primary" />
+                </div>
+                {PHONE_NUMBER_DISPLAY}
+              </a>
               <a
                 href={WHATSAPP_LINK}
                 target="_blank"
@@ -77,7 +91,7 @@ export function CtaSection() {
                 <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
                   <BrandIcon icon={siWhatsapp} className="h-5 w-5 text-primary" />
                 </div>
-                {WHATSAPP_DISPLAY}
+                Conversar no WhatsApp
               </a>
             </div>
           </div>

@@ -3,8 +3,8 @@ export type Locale = "pt" | "en"
 export const translations = {
   pt: {
     nav: {
-      inicio: "Inicio",
-      servicos: "Servicos",
+      inicio: "Início",
+      servicos: "Serviços",
       sobre: "Sobre",
       resultados: "Resultados",
       contato: "Contato",
@@ -13,124 +13,130 @@ export const translations = {
       closeMenu: "Fechar menu",
     },
     hero: {
-      badge: "Inteligencia Artificial & Machine Learning",
+      badge: "Inteligência Artificial & Machine Learning",
       titleStart: "Transformamos o digital em ",
       titleHighlight: "resultados reais",
       description:
-        "Ajudamos pessoas e empresas a crescer, escalar e otimizar processos com tecnologia de ponta, IA e machine learning. Sua transformacao digital comeca aqui.",
+        "Ajudamos pessoas e empresas a crescer, escalar e otimizar processos com tecnologia de ponta, IA e machine learning. Sua transformação digital começa aqui.",
       ctaPrimary: "Comece Agora",
-      ctaSecondary: "Nossos Servicos",
+      ctaSecondary: "Nossos Serviços",
       stat1: "Projetos Entregues",
-      stat2: "Satisfacao",
-      stat3: "ROI Medio",
+      stat2: "Satisfação",
+      stat3: "ROI Médio",
     },
     marquee: [
-      "Inteligencia Artificial",
+      "Inteligência Artificial",
       "Machine Learning",
-      "Automacao",
+      "Automação",
       "Growth Marketing",
       "Analytics",
-      "Transformacao Digital",
+      "Transformação Digital",
       "Produtividade",
       "Escala",
-      "Inovacao",
+      "Inovação",
       "Performance",
     ],
     services: {
       subtitle: "O que fazemos",
-      title: "Solucoes que impulsionam a transformacao digital",
+      title: "Soluções que impulsionam a transformação digital",
       description:
-        "Nossa colecao de servicos abrange todas as etapas do processo de transformacao. Descubra como ajudamos negocios a se transformar.",
+        "Nossa coleção de serviços abrange todas as etapas do processo de transformação. Descubra como ajudamos negócios a se transformar.",
       learnMore: "Saiba mais ->",
       items: [
         {
-          title: "Inteligencia Artificial",
+          title: "Inteligência Artificial",
           description:
-            "Implementamos solucoes de IA personalizadas que automatizam processos, otimizam decisoes e geram insights profundos para o seu negocio.",
+            "Implementamos soluções de IA personalizadas que automatizam processos, otimizam decisões e geram insights profundos para o seu negócio.",
         },
         {
           title: "Machine Learning",
           description:
-            "Modelos preditivos e algoritmos de aprendizado de maquina que transformam dados brutos em vantagem competitiva real.",
+            "Modelos preditivos e algoritmos de aprendizado de máquina que transformam dados brutos em vantagem competitiva real.",
         },
         {
           title: "Crescimento Digital",
           description:
-            "Estrategias de growth marketing orientadas por dados para escalar sua presenca digital e multiplicar seus resultados.",
+            "Estratégias de growth marketing orientadas por dados para escalar sua presença digital e multiplicar seus resultados.",
         },
         {
-          title: "Automacao de Processos",
+          title: "Automação de Processos",
           description:
             "Automatizamos fluxos de trabalho complexos para aumentar produtividade, reduzir custos e eliminar erros humanos.",
         },
         {
           title: "Analytics & BI",
           description:
-            "Dashboards inteligentes e analises avancadas que revelam oportunidades escondidas nos seus dados de negocio.",
+            "Dashboards inteligentes e análises avançadas que revelam oportunidades escondidas nos seus dados de negócio.",
         },
         {
-          title: "Transformacao Digital",
+          title: "Transformação Digital",
           description:
-            "Consultoria completa para digitalizar operacoes, modernizar sistemas e preparar sua empresa para o futuro.",
+            "Consultoria completa para digitalizar operações, modernizar sistemas e preparar sua empresa para o futuro.",
         },
       ],
     },
     about: {
       subtitle: "Quem somos",
       title: "Onde tecnologia profunda encontra mentalidade humana",
-      p1: "Somos um coletivo de especialistas apaixonados por tecnologia e transformacao digital. Combinamos conhecimento profundo em IA, machine learning e estrategia digital com uma abordagem centrada nas pessoas para impulsionar negocios.",
-      p2: "Acreditamos que a verdadeira inovacao acontece quando a tecnologia serve as pessoas. Cada projeto que tocamos e uma oportunidade de gerar impacto real e mensuravel.",
+      p1: "Somos um coletivo de especialistas apaixonados por tecnologia e transformação digital. Combinamos conhecimento profundo em IA, machine learning e estratégia digital com uma abordagem centrada nas pessoas para impulsionar negócios.",
+      p2: "Acreditamos que a verdadeira inovação acontece quando a tecnologia serve as pessoas. Cada projeto que tocamos é uma oportunidade de gerar impacto real e mensurável.",
       highlights: [
         "Equipe especializada em IA e dados",
-        "Metodologia agil e orientada a resultados",
+        "Metodologia ágil e orientada a resultados",
         "Parceiros certificados das maiores plataformas",
-        "+8 anos de experiencia no mercado digital",
+        "+10 anos de experiência no mercado digital",
       ],
       yearsLabel: "Anos de",
-      yearsLabel2: "experiencia",
+      yearsLabel2: "experiência",
     },
     metrics: {
       subtitle: "Resultados que importam",
-      title: "Numeros que falam por si",
+      title: "Números que falam por si",
       stats: [
-        { value: 150, suffix: "+", label: "Projetos Entregues" },
-        { value: 98, suffix: "%", label: "Taxa de Satisfacao" },
+        { value: 50, suffix: "+", label: "Projetos Entregues" },
+        { value: 98, suffix: "%", label: "Taxa de Satisfação" },
         { value: 50, suffix: "M+", label: "Dados Processados" },
-        { value: 3, suffix: "x", label: "ROI Medio dos Clientes" },
+        { value: 3, suffix: "x", label: "ROI Médio dos Clientes" },
       ],
     },
     testimonials: {
       subtitle: "Depoimentos",
       title: "O que dizem nossos clientes",
       prevLabel: "Depoimento anterior",
-      nextLabel: "Proximo depoimento",
+      nextLabel: "Próximo depoimento",
       goTo: "Ir para depoimento",
       items: [
         {
           quote:
-            "A Oceano Web transformou completamente nossa operacao. A implementacao de IA nos processos de atendimento reduziu nosso tempo de resposta em 70% e aumentou a satisfacao dos clientes.",
-          author: "Marina Silva",
-          role: "CEO, TechVida Solutions",
+            "A Oceano Web revolucionou nossa presença digital. O novo site moderno e intuitivo atraiu um público totalmente novo, e a implementação de IA nos processos de atendimento reduziu nosso tempo de resposta em 70%, aumentando drasticamente a satisfação dos clientes.",
+          author: "Edlene Lorenzzato",
+          role: "Lorenzzato Motor",
         },
         {
           quote:
-            "Nunca imaginei que machine learning pudesse impactar tanto o nosso negocio. Conseguimos prever demandas com 95% de precisao e reduzir custos operacionais drasticamente.",
-          author: "Ricardo Mendes",
-          role: "Diretor de Operacoes, LogiPrime",
+            "Nosso novo site desenvolvido pela Oceano Web elevou completamente a presença digital do Grupo Nortearh. O design profissional e a experiência de navegação impecável aumentaram nossos leads qualificados em 85% nos primeiros 3 meses.",
+          author: "Carlos Nortearh",
+          role: "Grupo Nortearh",
         },
         {
           quote:
-            "O time da Oceano Web entende de verdade o que significa transformacao digital. Nao e so sobre tecnologia, e sobre resultados reais e mensuraveis. Nosso ROI triplicou em 6 meses.",
-          author: "Camila Oliveira",
-          role: "Fundadora, Scale Commerce",
+            "A plataforma de ecommerce que a Oceano Web criou para a Mobiliadora Bicalho superou todas as expectativas. Em 6 meses, as vendas online já representam 40% do nosso faturamento. A integração perfeita entre site e loja virtual fez toda a diferença.",
+          author: "Patricia Bicalho",
+          role: "Mobiliadora Bicalho",
+        },
+        {
+          quote:
+            "A plataforma customizada que a Oceano Web desenvolveu para a Concur revolucionou nossa forma de gerenciar conteúdo. Site profissional, sistema completo de publicação de vídeos, transmissões ao vivo e um dashboard intuitivo que centralizou toda nossa operação. Aumentamos o engajamento em 200%.",
+          author: "Rodrigo Fernandes",
+          role: "Concur",
         },
       ],
     },
     cta: {
       subtitle: "Contato",
-      title: "Pronto para transformar seu negocio?",
+      title: "Pronto para transformar seu negócio?",
       description:
-        "Seja uma empresa buscando escalar, uma marca querendo se digitalizar ou alguem inspirado pelo que estamos construindo. Vamos conversar.",
+        "Seja uma empresa buscando escalar, uma marca querendo se digitalizar ou alguém inspirado pelo que estamos construindo. Vamos conversar.",
       successTitle: "Mensagem enviada!",
       successDescription: "Entraremos em contato em breve.",
       labelName: "Nome",
@@ -146,16 +152,16 @@ export const translations = {
     },
     footer: {
       description:
-        "Navegando o oceano digital com tecnologia, inteligencia artificial e inovacao para transformar seu negocio.",
-      navigationTitle: "Navegacao",
-      servicesTitle: "Servicos",
+        "Navegando o oceano digital com tecnologia, inteligência artificial e inovação para transformar seu negócio.",
+      navigationTitle: "Navegação",
+      servicesTitle: "Serviços",
       contactTitle: "Contato",
       copyright: "2026 Oceano Web. Todos os direitos reservados.",
       serviceLinks: [
-        "Inteligencia Artificial",
+        "Inteligência Artificial",
         "Machine Learning",
         "Crescimento Digital",
-        "Automacao",
+        "Automação",
         "Analytics & BI",
       ],
     },
@@ -243,7 +249,7 @@ export const translations = {
         "Team specialized in AI and data",
         "Agile methodology oriented to results",
         "Certified partners of major platforms",
-        "8+ years of experience in the digital market",
+        "10+ years of experience in the digital market",
       ],
       yearsLabel: "Years of",
       yearsLabel2: "experience",
@@ -252,7 +258,7 @@ export const translations = {
       subtitle: "Results that matter",
       title: "Numbers that speak for themselves",
       stats: [
-        { value: 150, suffix: "+", label: "Projects Delivered" },
+        { value: 50, suffix: "+", label: "Projects Delivered" },
         { value: 98, suffix: "%", label: "Satisfaction Rate" },
         { value: 50, suffix: "M+", label: "Data Processed" },
         { value: 3, suffix: "x", label: "Average Client ROI" },
@@ -267,21 +273,27 @@ export const translations = {
       items: [
         {
           quote:
-            "Oceano Web completely transformed our operation. The AI implementation in customer service processes reduced our response time by 70% and increased customer satisfaction.",
-          author: "Marina Silva",
-          role: "CEO, TechVida Solutions",
+            "Oceano Web revolutionized our digital presence. The modern and intuitive new website attracted a completely new audience, and the AI implementation in customer service processes reduced our response time by 70%, drastically increasing customer satisfaction.",
+          author: "Edlene Lorenzzato",
+          role: "Lorenzzato Motor",
         },
         {
           quote:
-            "I never imagined machine learning could impact our business so much. We managed to predict demand with 95% accuracy and drastically reduce operational costs.",
-          author: "Ricardo Mendes",
-          role: "Director of Operations, LogiPrime",
+            "Our new website developed by Oceano Web completely elevated Grupo Nortearh's digital presence. The professional design and impeccable navigation experience increased our qualified leads by 85% in the first 3 months.",
+          author: "Carlos Nortearh",
+          role: "Grupo Nortearh",
         },
         {
           quote:
-            "The Oceano Web team truly understands what digital transformation means. It's not just about technology, it's about real, measurable results. Our ROI tripled in 6 months.",
-          author: "Camila Oliveira",
-          role: "Founder, Scale Commerce",
+            "The ecommerce platform that Oceano Web created for Mobiliadora Bicalho exceeded all expectations. In 6 months, online sales already represent 40% of our revenue. The seamless integration between website and online store made all the difference.",
+          author: "Patricia Bicalho",
+          role: "Mobiliadora Bicalho",
+        },
+        {
+          quote:
+            "The custom platform that Oceano Web developed for Concur revolutionized how we manage content. Professional website, complete video publishing system, live streaming, and an intuitive dashboard that centralized our entire operation. We increased engagement by 200%.",
+          author: "Rodrigo Fernandes",
+          role: "Concur",
         },
       ],
     },

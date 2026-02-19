@@ -8,7 +8,7 @@ import {
   OG_IMAGE,
   SITE_NAME,
   SITE_URL,
-  WHATSAPP_DISPLAY,
+  PHONE_NUMBER_DISPLAY,
 } from "@/lib/site-config"
 import { GoogleAnalytics } from "@/components/google-analytics"
 
@@ -88,7 +88,7 @@ export default function RootLayout({
         height: "512",
       },
       email: CONTACT_EMAIL,
-      telephone: WHATSAPP_DISPLAY,
+      telephone: PHONE_NUMBER_DISPLAY,
       sameAs: [LINKEDIN_URL, INSTAGRAM_URL],
     },
     {
