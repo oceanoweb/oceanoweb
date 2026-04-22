@@ -66,7 +66,7 @@ export function Header() {
             type="button"
             onClick={toggleLocale}
             className="flex items-center gap-1.5 rounded-lg border border-border px-3 py-2 text-xs font-medium text-muted-foreground transition-colors hover:border-primary hover:text-primary"
-            aria-label={locale === "pt" ? "Switch to English" : "Mudar para Portugues"}
+            aria-label={locale === "pt" ? "Switch to English" : "Mudar para Português"}
           >
             <Globe className="h-3.5 w-3.5" />
             {locale === "pt" ? "EN" : "PT"}
@@ -81,7 +81,7 @@ export function Header() {
             type="button"
             onClick={toggleLocale}
             className="flex items-center gap-1.5 rounded-lg border border-border px-2.5 py-1.5 text-xs font-medium text-muted-foreground transition-colors hover:border-primary hover:text-primary"
-            aria-label={locale === "pt" ? "Switch to English" : "Mudar para Portugues"}
+            aria-label={locale === "pt" ? "Switch to English" : "Mudar para Português"}
           >
             <Globe className="h-3.5 w-3.5" />
             {locale === "pt" ? "EN" : "PT"}
