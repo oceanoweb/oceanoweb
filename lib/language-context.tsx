@@ -3,7 +3,7 @@
 import { createContext, useContext, useState, useCallback, type ReactNode } from "react"
 import { translations, type Locale } from "./translations"
 
-type TranslationType = (typeof translations)["pt"]
+type TranslationType = (typeof translations)[Locale]
 
 interface LanguageContextType {
   locale: Locale
