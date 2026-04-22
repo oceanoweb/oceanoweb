@@ -31,9 +31,9 @@ export function CtaSection() {
     try {
       await sendContactEmail(data)
       setSubmitted(true)
-    } catch (err) {
+    } catch {
+      // TODO: replace with Sentry captureException for proper error tracking
       setError("Erro ao enviar mensagem. Tente novamente.")
-      console.error(err)
     } finally {
       setLoading(false)
     }
