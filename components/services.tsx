@@ -1,7 +1,7 @@
-"use client"
+'use client'
 
-import { Brain, BarChart3, Zap, Globe, Cpu, TrendingUp } from "lucide-react"
-import { useLanguage } from "@/lib/language-context"
+import { Brain, BarChart3, Zap, Globe, Cpu, TrendingUp } from 'lucide-react'
+import { useLanguage } from '@/lib/language-context'
 
 const icons = [Brain, Cpu, TrendingUp, Zap, BarChart3, Globe]
 
