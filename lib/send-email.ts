@@ -16,11 +16,16 @@ const contactSchema = z.object({
 /** Escapes HTML special characters to prevent injection in the email body. */
 function escapeHtml(str: string): string {
   return str
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#39;")
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#39;")
+}
+
+/** Sanitizes plain-text email header values (e.g., Subject). */
+function sanitizeHeaderValue(str: string): string {
+  return str.replaceAll(/[\u0000-\u001F\u007F]+/g, " ").trim()
 }
 
 export async function sendContactEmail(data: {
@@ -40,7 +45,7 @@ export async function sendContactEmail(data: {
     from: FROM_EMAIL,
     to: CONTACT_EMAIL,
     replyTo: email,
-    subject: `Oceano Web: Nova mensagem de ${escapeHtml(name)}`,
+    subject: `Oceano Web: Nova mensagem de ${sanitizeHeaderValue(name)}`,
     html: `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
         <h2 style="color: #1a1a1a;">Nova mensagem de contacto</h2>
