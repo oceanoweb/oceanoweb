@@ -72,9 +72,8 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    // favicon.ico must be placed at app/favicon.ico (Next.js App Router serves
-    // it at the root automatically). Generate it from logo.jpg via favicon.io.
-    // Google uses this file to display the icon in search results.
+    // This project keeps favicon.ico in public/favicon.ico and serves it at
+    // /favicon.ico. Google uses this file to display the icon in search results.
     shortcut: "/favicon.ico",
     icon: [
       { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
