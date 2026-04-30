@@ -6,17 +6,17 @@ Site institucional da [Oceano Web](https://www.oceanoweb.com), agência digital 
 
 ## Stack
 
-| Camada | Tecnologia |
-|--------|-----------|
-| Framework | [Next.js 16](https://nextjs.org) (App Router) |
-| Linguagem | TypeScript 5.7 (strict) |
-| Styling | [Tailwind CSS 3](https://tailwindcss.com) + [shadcn/ui](https://ui.shadcn.com) |
-| Componentes | [Radix UI](https://radix-ui.com) |
-| Formulários | [React Hook Form](https://react-hook-form.com) + [Zod](https://zod.dev) |
-| Email | [Resend](https://resend.com) |
-| Analytics | Google Analytics 4 |
-| Package manager | Yarn 1.x |
-| Deploy | [Vercel](https://vercel.com) |
+| Camada          | Tecnologia                                                                     |
+| --------------- | ------------------------------------------------------------------------------ |
+| Framework       | [Next.js 16](https://nextjs.org) (App Router)                                  |
+| Linguagem       | TypeScript 5.7 (strict)                                                        |
+| Styling         | [Tailwind CSS 3](https://tailwindcss.com) + [shadcn/ui](https://ui.shadcn.com) |
+| Componentes     | [Radix UI](https://radix-ui.com)                                               |
+| Formulários     | [React Hook Form](https://react-hook-form.com) + [Zod](https://zod.dev)        |
+| Email           | [Resend](https://resend.com)                                                   |
+| Analytics       | Google Analytics 4                                                             |
+| Package manager | Yarn 1.x                                                                       |
+| Deploy          | [Vercel](https://vercel.com)                                                   |
 
 ---
 
@@ -59,10 +59,10 @@ Copia o ficheiro de exemplo e preenche os valores:
 cp .env.example .env.local
 ```
 
-| Variável | Descrição | Obrigatória |
-|----------|-----------|-------------|
-| `RESEND_API_KEY` | Chave da API Resend para envio de emails | Sim |
-| `NEXT_PUBLIC_GA_ID` | ID do Google Analytics 4 (ex: `G-XXXXXXXX`) | Não |
+| Variável            | Descrição                                   | Obrigatória |
+| ------------------- | ------------------------------------------- | ----------- |
+| `RESEND_API_KEY`    | Chave da API Resend para envio de emails    | Sim         |
+| `NEXT_PUBLIC_GA_ID` | ID do Google Analytics 4 (ex: `G-XXXXXXXX`) | Não         |
 
 > **Nota:** `NEXT_PUBLIC_*` é exposta ao browser. Nunca usar este prefixo para segredos.
 
@@ -78,14 +78,14 @@ Acede em [http://localhost:3000](http://localhost:3000).
 
 ## Scripts disponíveis
 
-| Comando | Descrição |
-|---------|-----------|
-| `yarn dev` | Servidor de desenvolvimento com hot reload (Turbopack) |
-| `yarn build` | Build de produção |
-| `yarn start` | Servidor de produção (requer `yarn build` primeiro) |
-| `yarn lint` | Verifica erros com ESLint (`next/core-web-vitals`) |
-| `yarn format` | Formata todos os ficheiros com Prettier |
-| `yarn format:check` | Verifica formatação sem alterar ficheiros |
+| Comando             | Descrição                                              |
+| ------------------- | ------------------------------------------------------ |
+| `yarn dev`          | Servidor de desenvolvimento com hot reload (Turbopack) |
+| `yarn build`        | Build de produção                                      |
+| `yarn start`        | Servidor de produção (requer `yarn build` primeiro)    |
+| `yarn lint`         | Verifica erros com ESLint (`next/core-web-vitals`)     |
+| `yarn format`       | Formata todos os ficheiros com Prettier                |
+| `yarn format:check` | Verifica formatação sem alterar ficheiros              |
 
 ---
 

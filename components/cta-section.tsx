@@ -1,13 +1,13 @@
-"use client"
+'use client'
 
-import React, { useState } from "react"
-import { ArrowRight, Mail, CheckCircle2, AlertCircle, Phone } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { useLanguage } from "@/lib/language-context"
-import { BrandIcon } from "@/components/brand-icon"
-import { siWhatsapp } from "simple-icons/icons"
-import { sendContactEmail } from "@/lib/send-email"
-import { CONTACT_EMAIL, PHONE_NUMBER_DISPLAY, PHONE_LINK, WHATSAPP_LINK } from "@/lib/site-config"
+import React, { useState } from 'react'
+import { ArrowRight, Mail, CheckCircle2, AlertCircle, Phone } from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { useLanguage } from '@/lib/language-context'
+import { BrandIcon } from '@/components/brand-icon'
+import { siWhatsapp } from 'simple-icons/icons'
+import { sendContactEmail } from '@/lib/send-email'
+import { CONTACT_EMAIL, PHONE_NUMBER_DISPLAY, PHONE_LINK, WHATSAPP_LINK } from '@/lib/site-config'
 
 export function CtaSection() {
   const [submitted, setSubmitted] = useState(false)
@@ -22,10 +22,10 @@ export function CtaSection() {
 
     const formData = new FormData(e.currentTarget)
     const data = {
-      name: formData.get("name") as string,
-      email: formData.get("email") as string,
-      company: (formData.get("company") as string) || undefined,
-      message: formData.get("message") as string,
+      name: formData.get('name') as string,
+      email: formData.get('email') as string,
+      company: (formData.get('company') as string) || undefined,
+      message: formData.get('message') as string,
     }
 
     try {
@@ -33,7 +33,7 @@ export function CtaSection() {
       setSubmitted(true)
     } catch {
       // TODO: replace with Sentry captureException for proper error tracking
-      setError("Erro ao enviar mensagem. Tente novamente.")
+      setError('Erro ao enviar mensagem. Tente novamente.')
     } finally {
       setLoading(false)
     }
@@ -105,9 +105,7 @@ export function CtaSection() {
                 <h3 className="mt-6 font-heading text-xl font-semibold text-foreground">
                   {t.cta.successTitle}
                 </h3>
-                <p className="mt-2 text-sm text-muted-foreground">
-                  {t.cta.successDescription}
-                </p>
+                <p className="mt-2 text-sm text-muted-foreground">{t.cta.successDescription}</p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="flex flex-col gap-5">
@@ -149,7 +147,10 @@ export function CtaSection() {
                 </div>
                 <div className="flex flex-col gap-2">
                   <label htmlFor="company" className="text-sm font-medium text-foreground">
-                    {t.cta.labelCompany} <span className="text-muted-foreground font-normal">{t.cta.labelCompanyOptional}</span>
+                    {t.cta.labelCompany}{' '}
+                    <span className="text-muted-foreground font-normal">
+                      {t.cta.labelCompanyOptional}
+                    </span>
                   </label>
                   <input
                     id="company"
@@ -174,8 +175,13 @@ export function CtaSection() {
                     className="rounded-lg border border-border bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary resize-none disabled:opacity-50 disabled:cursor-not-allowed"
                   />
                 </div>
-                <Button type="submit" size="lg" disabled={loading} className="bg-primary text-primary-foreground hover:bg-primary/90 gap-2 font-medium disabled:opacity-50 disabled:cursor-not-allowed">
-                  {loading ? "Enviando..." : t.cta.submit}
+                <Button
+                  type="submit"
+                  size="lg"
+                  disabled={loading}
+                  className="bg-primary text-primary-foreground hover:bg-primary/90 gap-2 font-medium disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  {loading ? 'Enviando...' : t.cta.submit}
                   <ArrowRight className="h-4 w-4" />
                 </Button>
               </form>

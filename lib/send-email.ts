@@ -1,31 +1,31 @@
-"use server"
+'use server'
 
-import { Resend } from "resend"
-import { z } from "zod"
-import { CONTACT_EMAIL, FROM_EMAIL } from "@/lib/site-config"
+import { Resend } from 'resend'
+import { z } from 'zod'
+import { CONTACT_EMAIL, FROM_EMAIL } from '@/lib/site-config'
 
 const resend = new Resend(process.env.RESEND_API_KEY)
 
 const contactSchema = z.object({
-  name: z.string().min(2, "Nome inválido").max(100).trim(),
-  email: z.string().email("Email inválido").max(200),
+  name: z.string().min(2, 'Nome inválido').max(100).trim(),
+  email: z.string().email('Email inválido').max(200),
   company: z.string().max(200).trim().optional(),
-  message: z.string().min(10, "Mensagem muito curta").max(2000).trim(),
+  message: z.string().min(10, 'Mensagem muito curta').max(2000).trim(),
 })
 
 /** Escapes HTML special characters to prevent injection in the email body. */
 function escapeHtml(str: string): string {
   return str
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;")
-    .replaceAll("'", "&#39;")
+    .replaceAll('&', '&amp;')
+    .replaceAll('<', '&lt;')
+    .replaceAll('>', '&gt;')
+    .replaceAll('"', '&quot;')
+    .replaceAll("'", '&#39;')
 }
 
 /** Sanitizes plain-text email header values (e.g., Subject). */
 function sanitizeHeaderValue(str: string): string {
-  return str.replaceAll(/[\u0000-\u001F\u007F]+/g, " ").trim()
+  return str.replaceAll(/[\u0000-\u001F\u007F]+/g, ' ').trim()
 }
 
 export async function sendContactEmail(data: {
@@ -36,7 +36,7 @@ export async function sendContactEmail(data: {
 }) {
   const parsed = contactSchema.safeParse(data)
   if (!parsed.success) {
-    throw new Error(parsed.error.issues[0]?.message ?? "Dados inválidos")
+    throw new Error(parsed.error.issues[0]?.message ?? 'Dados inválidos')
   }
 
   const { name, email, company, message } = parsed.data
@@ -52,7 +52,7 @@ export async function sendContactEmail(data: {
         <div style="background-color: #f5f5f5; padding: 20px; border-radius: 8px;">
           <p style="margin: 8px 0;"><strong>Nome:</strong> ${escapeHtml(name)}</p>
           <p style="margin: 8px 0;"><strong>Email:</strong> ${escapeHtml(email)}</p>
-          <p style="margin: 8px 0;"><strong>Empresa:</strong> ${escapeHtml(company ?? "Não informado")}</p>
+          <p style="margin: 8px 0;"><strong>Empresa:</strong> ${escapeHtml(company ?? 'Não informado')}</p>
         </div>
         <div style="margin-top: 20px;">
           <p style="color: #666;"><strong>Mensagem:</strong></p>

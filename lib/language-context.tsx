@@ -1,7 +1,7 @@
-"use client"
+'use client'
 
-import { createContext, useContext, useState, useCallback, type ReactNode } from "react"
-import { translations, type Locale } from "./translations"
+import { createContext, useContext, useState, useCallback, type ReactNode } from 'react'
+import { translations, type Locale } from './translations'
 
 type TranslationType = (typeof translations)[Locale]
 
@@ -14,10 +14,10 @@ interface LanguageContextType {
 const LanguageContext = createContext<LanguageContextType | null>(null)
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [locale, setLocale] = useState<Locale>("pt")
+  const [locale, setLocale] = useState<Locale>('pt')
 
   const toggleLocale = useCallback(() => {
-    setLocale((prev) => (prev === "pt" ? "en" : "pt"))
+    setLocale(prev => (prev === 'pt' ? 'en' : 'pt'))
   }, [])
 
   const t = translations[locale]
@@ -32,7 +32,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 export function useLanguage() {
   const context = useContext(LanguageContext)
   if (!context) {
-    throw new Error("useLanguage must be used within a LanguageProvider")
+    throw new Error('useLanguage must be used within a LanguageProvider')
   }
   return context
 }

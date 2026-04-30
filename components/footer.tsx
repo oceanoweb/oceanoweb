@@ -1,9 +1,9 @@
-"use client"
+'use client'
 
-import Image from "next/image"
-import { useLanguage } from "@/lib/language-context"
-import { BrandIcon } from "@/components/brand-icon"
-import { siInstagram, siLinkedin, siWhatsapp } from "simple-icons/icons"
+import Image from 'next/image'
+import { useLanguage } from '@/lib/language-context'
+import { BrandIcon } from '@/components/brand-icon'
+import { siInstagram, siLinkedin, siWhatsapp } from 'simple-icons/icons'
 import {
   CONTACT_EMAIL,
   INSTAGRAM_URL,
@@ -13,23 +13,23 @@ import {
   PHONE_NUMBER_DISPLAY,
   PHONE_LINK,
   WHATSAPP_LINK,
-} from "@/lib/site-config"
+} from '@/lib/site-config'
 
 export function Footer() {
   const { t } = useLanguage()
 
   const socialLinks = [
-    { icon: siLinkedin, href: LINKEDIN_URL, label: "LinkedIn" },
-    { icon: siInstagram, href: INSTAGRAM_URL, label: "Instagram" },
-    { icon: siWhatsapp, href: WHATSAPP_LINK, label: "WhatsApp" },
+    { icon: siLinkedin, href: LINKEDIN_URL, label: 'LinkedIn' },
+    { icon: siInstagram, href: INSTAGRAM_URL, label: 'Instagram' },
+    { icon: siWhatsapp, href: WHATSAPP_LINK, label: 'WhatsApp' },
   ]
 
   const navLinks = [
-    { label: t.nav.inicio, href: "#inicio" },
-    { label: t.nav.servicos, href: "#servicos" },
-    { label: t.nav.sobre, href: "#sobre" },
-    { label: t.nav.resultados, href: "#resultados" },
-    { label: t.nav.contato, href: "#contato" },
+    { label: t.nav.inicio, href: '#inicio' },
+    { label: t.nav.servicos, href: '#servicos' },
+    { label: t.nav.sobre, href: '#sobre' },
+    { label: t.nav.resultados, href: '#resultados' },
+    { label: t.nav.contato, href: '#contato' },
   ]
 
   return (
@@ -53,7 +53,7 @@ export function Footer() {
               {t.footer.description}
             </p>
             <div className="mt-6 flex gap-3">
-              {socialLinks.map((social) => (
+              {socialLinks.map(social => (
                 <a
                   key={social.label}
                   href={social.href}
@@ -73,7 +73,7 @@ export function Footer() {
               {t.footer.navigationTitle}
             </h3>
             <ul className="mt-4 flex flex-col gap-3">
-              {navLinks.map((link) => (
+              {navLinks.map(link => (
                 <li key={link.label}>
                   <a
                     href={link.href}
@@ -91,7 +91,7 @@ export function Footer() {
               {t.footer.servicesTitle}
             </h3>
             <ul className="mt-4 flex flex-col gap-3">
-              {t.footer.serviceLinks.map((label) => (
+              {t.footer.serviceLinks.map(label => (
                 <li key={label}>
                   <a
                     href="#servicos"
@@ -140,9 +140,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 flex items-center justify-center border-t border-border pt-8">
-          <p className="text-sm text-muted-foreground">
-            {t.footer.copyright}
-          </p>
+          <p className="text-sm text-muted-foreground">{t.footer.copyright}</p>
         </div>
       </div>
     </footer>
