@@ -1,16 +1,16 @@
-"use client"
+'use client'
 
-import { useState } from "react"
-import { ChevronLeft, ChevronRight, Quote } from "lucide-react"
-import { useLanguage } from "@/lib/language-context"
+import { useState } from 'react'
+import { ChevronLeft, ChevronRight, Quote } from 'lucide-react'
+import { useLanguage } from '@/lib/language-context'
 
 export function Testimonials() {
   const [active, setActive] = useState(0)
   const { t } = useLanguage()
   const testimonials = t.testimonials.items
 
-  const prev = () => setActive((a) => (a === 0 ? testimonials.length - 1 : a - 1))
-  const next = () => setActive((a) => (a === testimonials.length - 1 ? 0 : a + 1))
+  const prev = () => setActive(a => (a === 0 ? testimonials.length - 1 : a - 1))
+  const next = () => setActive(a => (a === testimonials.length - 1 ? 0 : a + 1))
 
   return (
     <section className="relative py-24 md:py-32">
@@ -36,12 +36,8 @@ export function Testimonials() {
                   {testimonials[active].author[0]}
                 </div>
                 <div>
-                  <p className="font-medium text-foreground">
-                    {testimonials[active].author}
-                  </p>
-                  <p className="text-sm text-muted-foreground">
-                    {testimonials[active].role}
-                  </p>
+                  <p className="font-medium text-foreground">{testimonials[active].author}</p>
+                  <p className="text-sm text-muted-foreground">{testimonials[active].role}</p>
                 </div>
               </footer>
             </blockquote>
@@ -63,7 +59,7 @@ export function Testimonials() {
                   type="button"
                   onClick={() => setActive(i)}
                   className={`h-2 rounded-full transition-all ${
-                    i === active ? "w-8 bg-primary" : "w-2 bg-border"
+                    i === active ? 'w-8 bg-primary' : 'w-2 bg-border'
                   }`}
                   aria-label={`${t.testimonials.goTo} ${i + 1}`}
                 />
