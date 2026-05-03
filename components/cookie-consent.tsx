@@ -37,6 +37,9 @@ export function CookieConsent() {
     localStorage.setItem(STORAGE_KEY, 'rejected')
     setConsent('rejected')
     setShowBanner(false)
+    if (typeof window.gtag === 'function') {
+      window.gtag('consent', 'update', { analytics_storage: 'denied' })
+    }
   }
 
   if (!ready) return null
