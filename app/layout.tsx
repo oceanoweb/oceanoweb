@@ -11,6 +11,7 @@ import {
   PHONE_NUMBER_DISPLAY,
 } from '@/lib/site-config'
 import { CookieConsent } from '@/components/cookie-consent'
+import { LanguageProvider } from '@/lib/language-context'
 
 import './globals.css'
 
@@ -195,8 +196,10 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
-        {children}
-        <CookieConsent />
+        <LanguageProvider>
+          {children}
+          <CookieConsent />
+        </LanguageProvider>
       </body>
     </html>
   )

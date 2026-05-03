@@ -1,6 +1,5 @@
 'use client'
 
-import { LanguageProvider } from '@/lib/language-context'
 import { Header } from '@/components/header'
 import { Hero } from '@/components/hero'
 import { MarqueeBand } from '@/components/marquee-band'
@@ -20,7 +19,7 @@ import { trackEvent } from '@/lib/gtag'
 
 export function HomePage() {
   return (
-    <LanguageProvider>
+    <>
       <main>
         <Header />
         <Hero />
@@ -46,6 +45,6 @@ export function HomePage() {
         <BrandIcon icon={siWhatsapp} className="h-4 w-4" />
         Fale no WhatsApp
       </a>
-    </LanguageProvider>
+    </>
   )
 }
