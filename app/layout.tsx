@@ -107,7 +107,7 @@ export default function RootLayout({
       url: SITE_URL,
       logo: {
         '@type': 'ImageObject',
-        url: `${SITE_URL}/logo.jpg`,
+        url: `${SITE_URL}/logo.png`,
         width: '512',
         height: '512',
       },
