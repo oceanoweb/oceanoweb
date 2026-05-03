@@ -278,6 +278,24 @@ export const translations = {
         backToAllBottom: 'Ver todos os artigos',
       },
     },
+    servicesSection: {
+      layout: {
+        backToAll: '← Todos os serviços',
+      },
+      page: {
+        benefitsEyebrow: 'O que entregamos',
+        benefitsTitle: 'Capacidades e entregas',
+        useCasesEyebrow: 'Aplicações práticas',
+        useCasesTitle: 'Casos de uso frequentes',
+        useCasesDescription:
+          'Exemplos reais de projectos que implementamos para clientes em Portugal e no Brasil.',
+        ctaTitle: 'Pronto para avançar?',
+        ctaDescription:
+          'Fale com um especialista e perceba como podemos ajudar a sua empresa. Resposta em até 24 horas.',
+        ctaButton: 'Falar com um Especialista',
+        whatsapp: 'Conversar no WhatsApp',
+      },
+    },
   },
   en: {
     nav: {
@@ -554,6 +572,24 @@ export const translations = {
         ctaButton: 'Talk to a Specialist',
         whatsapp: 'Chat on WhatsApp',
         backToAllBottom: 'View all articles',
+      },
+    },
+    servicesSection: {
+      layout: {
+        backToAll: '← All services',
+      },
+      page: {
+        benefitsEyebrow: 'What we deliver',
+        benefitsTitle: 'Capabilities and deliverables',
+        useCasesEyebrow: 'Practical applications',
+        useCasesTitle: 'Common use cases',
+        useCasesDescription:
+          'Real examples of projects we have implemented for clients in Portugal and Brazil.',
+        ctaTitle: 'Ready to move forward?',
+        ctaDescription:
+          'Talk to a specialist and find out how we can help your company. Response within 24 hours.',
+        ctaButton: 'Talk to a Specialist',
+        whatsapp: 'Chat on WhatsApp',
       },
     },
   },
