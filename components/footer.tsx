@@ -4,6 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useLanguage } from '@/lib/language-context'
 import { trackEvent } from '@/lib/gtag'
+import { services } from '@/lib/services-data'
 import { BrandIcon } from '@/components/brand-icon'
 import { siInstagram, siLinkedin, siWhatsapp } from 'simple-icons/icons'
 import {
@@ -99,14 +100,14 @@ export function Footer() {
               {t.footer.servicesTitle}
             </h3>
             <ul className="mt-4 flex flex-col gap-3">
-              {t.footer.serviceLinks.map(label => (
+              {t.footer.serviceLinks.map((label, index) => (
                 <li key={label}>
-                  <a
-                    href="#servicos"
+                  <Link
+                    href={`/servicos/${services[index].slug}`}
                     className="text-sm text-muted-foreground transition-colors hover:text-primary"
                   >
                     {label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
