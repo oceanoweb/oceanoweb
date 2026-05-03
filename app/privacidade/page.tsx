@@ -82,11 +82,6 @@ export default function PrivacidadePage() {
                 origem do tráfego. Finalidade: análise do desempenho do website e melhoria da
                 experiência do utilizador.
               </li>
-              <li>
-                <strong className="text-foreground">Cookies de marketing (Meta Pixel):</strong>{' '}
-                dados de comportamento no website para fins de publicidade personalizada e
-                remarketing. Finalidade: apresentar anúncios relevantes em plataformas de terceiros.
-              </li>
             </ul>
           </section>
 
@@ -101,7 +96,7 @@ export default function PrivacidadePage() {
                 RGPD).
               </li>
               <li>
-                <strong className="text-foreground">Cookies analíticos e de marketing:</strong>{' '}
+                <strong className="text-foreground">Cookies analíticos:</strong>{' '}
                 consentimento do titular (art.º 6.º, n.º 1, alínea a) do RGPD). Pode revogar o
                 consentimento a qualquer momento através das preferências de cookies.
               </li>
@@ -145,10 +140,6 @@ export default function PrivacidadePage() {
                 de tráfego e comportamento no website.
               </li>
               <li>
-                <strong className="text-foreground">Meta Platforms, Inc.</strong>, publicidade
-                personalizada (apenas com consentimento).
-              </li>
-              <li>
                 <strong className="text-foreground">Vercel, Inc.</strong>, alojamento do website.
               </li>
             </ul>
@@ -174,10 +165,6 @@ export default function PrivacidadePage() {
               </li>
               <li>
                 <strong className="text-foreground">Cookies analíticos:</strong> Google Analytics 4.
-                Requerem consentimento.
-              </li>
-              <li>
-                <strong className="text-foreground">Cookies de marketing:</strong> Meta Pixel.
                 Requerem consentimento.
               </li>
             </ul>
