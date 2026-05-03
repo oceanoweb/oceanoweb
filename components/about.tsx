@@ -46,7 +46,7 @@ export function About() {
         <div className="grid items-center gap-16 lg:grid-cols-2">
           <div className="relative">
             <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
-              <Image src="/about-image.jpg" alt="Oceano Web" fill className="object-cover" />
+              <Image src="/about-image.webp" alt="Oceano Web" fill className="object-cover" />
               <div className="absolute inset-0 bg-primary/10" />
             </div>
             <div className="absolute -bottom-6 -right-6 hidden rounded-2xl border border-border bg-card p-6 shadow-2xl md:block">

@@ -11,7 +11,7 @@ export function Hero() {
 
   return (
     <section id="inicio" className="relative min-h-screen flex items-center overflow-hidden">
-      <Image src="/hero-bg.jpg" alt="" fill className="object-cover" priority />
+      <Image src="/hero-bg.webp" alt="" fill className="object-cover" priority />
       <div className="absolute inset-0 bg-background/70" />
 
       <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
