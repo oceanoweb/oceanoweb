@@ -1,7 +1,12 @@
+'use client'
+
 import Link from 'next/link'
 import Image from 'next/image'
+import { useLanguage } from '@/lib/language-context'
 
 export default function ServicosLayout({ children }: { children: React.ReactNode }) {
+  const { t } = useLanguage()
+
   return (
     <div className="min-h-screen bg-background text-foreground">
       <header className="border-b border-border sticky top-0 z-50 bg-background/80 backdrop-blur-sm">
@@ -22,7 +27,7 @@ export default function ServicosLayout({ children }: { children: React.ReactNode
             href="/#servicos"
             className="text-sm text-muted-foreground hover:text-primary transition-colors"
           >
-            ← Todos os serviços
+            {t.servicesSection.layout.backToAll}
           </Link>
         </div>
       </header>
@@ -31,13 +36,13 @@ export default function ServicosLayout({ children }: { children: React.ReactNode
 
       <footer className="border-t border-border mt-8">
         <div className="mx-auto max-w-7xl px-6 py-8 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between text-sm text-muted-foreground">
-          <p>© 2026 Oceano Web. Todos os direitos reservados.</p>
+          <p>© {t.footer.copyright}</p>
           <div className="flex gap-4">
             <Link href="/privacidade" className="hover:text-primary transition-colors">
-              Política de Privacidade
+              {t.footer.privacyLink}
             </Link>
             <Link href="/termos" className="hover:text-primary transition-colors">
-              Termos de Serviço
+              {t.footer.termsLink}
             </Link>
           </div>
         </div>
