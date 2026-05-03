@@ -3,6 +3,39 @@
 import { CheckCircle2 } from 'lucide-react'
 import Image from 'next/image'
 import { useLanguage } from '@/lib/language-context'
+import { BrandIcon } from '@/components/brand-icon'
+import {
+  siGoogle,
+  siMeta,
+  siMicrosoft,
+  siHubspot,
+  siGooglecloud,
+  siSalesforce,
+  siOpenai,
+  siAnthropic,
+  siNvidia,
+  siTensorflow,
+  siPytorch,
+  siMake,
+} from 'simple-icons/icons'
+
+const PLATFORM_LOGOS = [
+  { icon: siGoogle, name: 'Google' },
+  { icon: siMeta, name: 'Meta' },
+  { icon: siMicrosoft, name: 'Microsoft' },
+  { icon: siHubspot, name: 'HubSpot' },
+  { icon: siGooglecloud, name: 'Google Cloud' },
+  { icon: siSalesforce, name: 'Salesforce' },
+] as const
+
+const AI_LOGOS = [
+  { icon: siOpenai, name: 'OpenAI' },
+  { icon: siAnthropic, name: 'Anthropic' },
+  { icon: siNvidia, name: 'NVIDIA' },
+  { icon: siTensorflow, name: 'TensorFlow' },
+  { icon: siPytorch, name: 'PyTorch' },
+  { icon: siMake, name: 'Make' },
+] as const
 
 export function About() {
   const { t } = useLanguage()
@@ -44,6 +77,44 @@ export function About() {
                 </li>
               ))}
             </ul>
+
+            <div className="mt-10 border-t border-border pt-8 space-y-6">
+              <div>
+                <p className="mb-4 text-xs font-medium uppercase tracking-widest text-muted-foreground">
+                  {t.about.partnersTitle}
+                </p>
+                <div className="flex flex-wrap gap-x-5 gap-y-4">
+                  {PLATFORM_LOGOS.map(({ icon, name }) => (
+                    <div
+                      key={name}
+                      className="flex flex-col items-center gap-1.5 opacity-40 hover:opacity-80 transition-opacity duration-200"
+                      title={name}
+                    >
+                      <BrandIcon icon={icon} className="h-6 w-6 text-foreground" />
+                      <span className="text-[10px] text-muted-foreground">{name}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <p className="mb-4 text-xs font-medium uppercase tracking-widest text-muted-foreground">
+                  {t.about.aiTitle}
+                </p>
+                <div className="flex flex-wrap gap-x-5 gap-y-4">
+                  {AI_LOGOS.map(({ icon, name }) => (
+                    <div
+                      key={name}
+                      className="flex flex-col items-center gap-1.5 opacity-40 hover:opacity-80 transition-opacity duration-200"
+                      title={name}
+                    >
+                      <BrandIcon icon={icon} className="h-6 w-6 text-foreground" />
+                      <span className="text-[10px] text-muted-foreground">{name}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

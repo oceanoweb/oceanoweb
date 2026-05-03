@@ -88,6 +88,8 @@ export const translations = {
       ],
       yearsLabel: 'Anos de',
       yearsLabel2: 'experiência',
+      partnersTitle: 'Plataformas & Parceiros',
+      aiTitle: 'IA & Machine Learning',
     },
     metrics: {
       subtitle: 'Resultados que importam',
@@ -253,6 +255,8 @@ export const translations = {
       ],
       yearsLabel: 'Years of',
       yearsLabel2: 'experience',
+      partnersTitle: 'Platforms & Partners',
+      aiTitle: 'AI & Machine Learning',
     },
     metrics: {
       subtitle: 'Results that matter',
