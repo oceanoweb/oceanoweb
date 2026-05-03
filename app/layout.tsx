@@ -27,17 +27,28 @@ export const metadata: Metadata = {
     'inteligência artificial',
     'machine learning',
     'agência digital',
+    'agência digital Portugal',
+    'agência digital Brasil',
+    'transformação digital Portugal',
+    'inteligência artificial para empresas',
+    'automação de processos Portugal',
+    'growth marketing Portugal',
     'desenvolvimento web',
     'marketing digital',
     'automação',
-    'Portugal',
   ],
   alternates: {
     canonical: SITE_URL,
+    languages: {
+      'pt-PT': SITE_URL,
+      'pt-BR': SITE_URL,
+      'x-default': SITE_URL,
+    },
   },
   openGraph: {
     type: 'website',
-    locale: 'pt_BR',
+    locale: 'pt_PT',
+    alternateLocale: ['pt_BR'],
     url: SITE_URL,
     title: 'Oceano Web | Transformação Digital com IA & Machine Learning',
     description:
@@ -178,7 +189,7 @@ export default function RootLayout({
   ]
 
   return (
-    <html lang="pt-BR" className="scroll-smooth">
+    <html lang="pt-PT" className="scroll-smooth">
       <head>
         <GoogleAnalytics />
       </head>
