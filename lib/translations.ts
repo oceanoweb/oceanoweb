@@ -136,9 +136,9 @@ export const translations = {
     },
     cta: {
       subtitle: 'Contato',
-      title: 'Pronto para transformar seu negócio?',
+      title: 'Vamos falar sobre o crescimento da sua empresa',
       description:
-        'Seja uma empresa buscando escalar, uma marca querendo se digitalizar ou alguém inspirado pelo que estamos construindo. Vamos conversar.',
+        'Preencha o formulário e um especialista entra em contacto em até 24 horas para perceber como podemos ajudar.',
       successTitle: 'Mensagem enviada!',
       successDescription: 'Entraremos em contato em breve.',
       labelName: 'Nome',
@@ -150,7 +150,7 @@ export const translations = {
       placeholderEmail: 'seu@email.com',
       placeholderCompany: 'Nome da empresa',
       placeholderMessage: 'Como podemos ajudar?',
-      submit: 'Enviar Mensagem',
+      submit: 'Falar com um Especialista',
     },
     footer: {
       description:
@@ -303,9 +303,9 @@ export const translations = {
     },
     cta: {
       subtitle: 'Contact',
-      title: 'Ready to transform your business?',
+      title: "Let's talk about your company's growth",
       description:
-        "Whether you're a company looking to scale, a brand wanting to digitize, or someone inspired by what we're building. Let's talk.",
+        'Fill in the form and a specialist will get in touch within 24 hours to understand how we can help.',
       successTitle: 'Message sent!',
       successDescription: "We'll get back to you soon.",
       labelName: 'Name',
@@ -317,7 +317,7 @@ export const translations = {
       placeholderEmail: 'your@email.com',
       placeholderCompany: 'Company name',
       placeholderMessage: 'How can we help?',
-      submit: 'Send Message',
+      submit: 'Talk to a Specialist',
     },
     footer: {
       description:
