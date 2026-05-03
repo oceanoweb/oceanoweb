@@ -10,7 +10,7 @@ import {
   SITE_URL,
   PHONE_NUMBER_DISPLAY,
 } from '@/lib/site-config'
-import { GoogleAnalytics } from '@/components/google-analytics'
+import { CookieConsent } from '@/components/cookie-consent'
 
 import './globals.css'
 
@@ -190,15 +190,13 @@ export default function RootLayout({
 
   return (
     <html lang="pt-PT" className="scroll-smooth">
-      <head>
-        <GoogleAnalytics />
-      </head>
       <body className={`${_inter.variable} ${_spaceGrotesk.variable} font-sans antialiased`}>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
         {children}
+        <CookieConsent />
       </body>
     </html>
   )
