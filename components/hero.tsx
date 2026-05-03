@@ -14,7 +14,7 @@ export function Hero() {
       <Image src="/hero-bg.webp" alt="" fill className="object-cover" priority />
       <div className="absolute inset-0 bg-background/70" />
 
-      <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
+      <div className="absolute inset-0 hidden overflow-hidden pointer-events-none md:block" aria-hidden="true">
         <div className="absolute top-1/4 left-1/4 h-96 w-96 rounded-full bg-primary/5 blur-3xl animate-pulse-glow" />
         <div
           className="absolute bottom-1/4 right-1/4 h-72 w-72 rounded-full bg-primary/10 blur-3xl animate-pulse-glow"

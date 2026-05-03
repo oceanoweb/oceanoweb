@@ -44,7 +44,7 @@ export function CtaSection() {
   return (
     <section id="contato" className="relative py-24 md:py-32 overflow-hidden">
       <div className="absolute inset-0 bg-secondary" />
-      <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
+      <div className="absolute inset-0 hidden overflow-hidden pointer-events-none md:block" aria-hidden="true">
         <div className="absolute -top-24 -right-24 h-96 w-96 rounded-full bg-primary/5 blur-3xl" />
         <div className="absolute -bottom-24 -left-24 h-96 w-96 rounded-full bg-primary/5 blur-3xl" />
       </div>

@@ -47,7 +47,7 @@ export function Header() {
           </span>
         </a>
 
-        <nav className="hidden items-center gap-8 md:flex">
+        <nav aria-label="Navegação principal" className="hidden items-center gap-8 md:flex">
           {navLinks.map(link => (
             <a
               key={link.href}
@@ -92,6 +92,8 @@ export function Header() {
             className="text-foreground"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label={isMobileMenuOpen ? t.nav.closeMenu : t.nav.openMenu}
+            aria-expanded={isMobileMenuOpen}
+            aria-controls="mobile-nav"
           >
             {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
@@ -100,7 +102,7 @@ export function Header() {
 
       {isMobileMenuOpen && (
         <div className="border-t border-border bg-background/95 backdrop-blur-xl md:hidden">
-          <nav className="mx-auto flex max-w-7xl flex-col gap-1 px-6 py-4">
+          <nav id="mobile-nav" aria-label="Menu de navegação" className="mx-auto flex max-w-7xl flex-col gap-1 px-6 py-4">
             {navLinks.map(link => (
               <a
                 key={link.href}
