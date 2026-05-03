@@ -10,23 +10,33 @@ const STORAGE_KEY = 'cookie-consent'
 
 export function CookieConsent() {
   const [consent, setConsent] = useState<ConsentState>(null)
+  const [showBanner, setShowBanner] = useState(false)
   const [ready, setReady] = useState(false)
   const gaId = process.env.NEXT_PUBLIC_GA_ID
 
   useEffect(() => {
     const stored = localStorage.getItem(STORAGE_KEY) as ConsentState | null
     setConsent(stored)
+    setShowBanner(stored === null)
     setReady(true)
+  }, [])
+
+  useEffect(() => {
+    const handler = () => setShowBanner(true)
+    window.addEventListener('cookie-preferences-open', handler)
+    return () => window.removeEventListener('cookie-preferences-open', handler)
   }, [])
 
   const accept = () => {
     localStorage.setItem(STORAGE_KEY, 'accepted')
     setConsent('accepted')
+    setShowBanner(false)
   }
 
   const reject = () => {
     localStorage.setItem(STORAGE_KEY, 'rejected')
     setConsent('rejected')
+    setShowBanner(false)
   }
 
   if (!ready) return null
@@ -55,8 +65,8 @@ export function CookieConsent() {
         </>
       )}
 
-      {/* Banner — shown only when no preference has been saved */}
-      {consent === null && (
+      {/* Banner — shown when no preference saved, or user reopens via footer */}
+      {showBanner && (
         <div
           role="dialog"
           aria-labelledby="cookie-title"

@@ -164,6 +164,12 @@ export function Footer() {
             >
               {t.footer.termsLink}
             </Link>
+            <button
+              onClick={() => window.dispatchEvent(new Event('cookie-preferences-open'))}
+              className="text-sm text-muted-foreground transition-colors hover:text-primary"
+            >
+              {t.footer.cookiePreferencesLink}
+            </button>
           </div>
         </div>
       </div>

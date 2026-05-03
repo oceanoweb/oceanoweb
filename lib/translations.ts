@@ -239,6 +239,7 @@ export const translations = {
       copyright: '2026 Oceano Web. Todos os direitos reservados.',
       privacyLink: 'Política de Privacidade',
       termsLink: 'Termos de Serviço',
+      cookiePreferencesLink: 'Preferências de Cookies',
       serviceLinks: [
         'Inteligência Artificial',
         'Machine Learning',
@@ -486,6 +487,7 @@ export const translations = {
       copyright: '2026 Oceano Web. All rights reserved.',
       privacyLink: 'Privacy Policy',
       termsLink: 'Terms of Service',
+      cookiePreferencesLink: 'Cookie Preferences',
       serviceLinks: [
         'Artificial Intelligence',
         'Machine Learning',
