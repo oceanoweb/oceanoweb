@@ -41,7 +41,7 @@ export function About() {
   const { t } = useLanguage()
 
   return (
-    <section id="sobre" className="relative py-24 md:py-32">
+    <section id="sobre" className="relative py-16 md:py-24">
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid items-center gap-16 lg:grid-cols-2">
           <div className="relative">

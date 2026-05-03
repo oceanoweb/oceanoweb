@@ -11,7 +11,7 @@ export function Services() {
   const { t } = useLanguage()
 
   return (
-    <section id="servicos" className="relative py-24 md:py-32">
+    <section id="servicos" className="relative py-16 md:py-24">
       <div className="mx-auto max-w-7xl px-6">
         <div className="max-w-2xl">
           <p className="text-sm font-medium uppercase tracking-widest text-primary">
