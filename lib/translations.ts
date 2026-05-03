@@ -13,11 +13,11 @@ export const translations = {
       closeMenu: 'Fechar menu',
     },
     hero: {
-      badge: 'Inteligência Artificial & Machine Learning',
-      titleStart: 'Transformamos o digital em ',
-      titleHighlight: 'resultados reais',
+      badge: 'Agência Digital · Portugal & Brasil',
+      titleStart: 'Transformamos empresas em Portugal e Brasil com ',
+      titleHighlight: 'IA e tecnologia de ponta',
       description:
-        'Ajudamos pessoas e empresas a crescer, escalar e otimizar processos com tecnologia de ponta, IA e machine learning. Sua transformação digital começa aqui.',
+        'Estratégia digital, inteligência artificial e automação para empresas que querem crescer, automatizar processos e escalar resultados.',
       ctaPrimary: 'Comece Agora',
       ctaSecondary: 'Nossos Serviços',
       stat1: 'Projetos Entregues',
@@ -178,11 +178,11 @@ export const translations = {
       closeMenu: 'Close menu',
     },
     hero: {
-      badge: 'Artificial Intelligence & Machine Learning',
-      titleStart: 'We turn digital into ',
-      titleHighlight: 'real results',
+      badge: 'Digital Agency · Portugal & Brazil',
+      titleStart: 'We transform businesses in Portugal and Brazil with ',
+      titleHighlight: 'AI and cutting-edge technology',
       description:
-        'We help people and businesses grow, scale, and optimize processes with cutting-edge technology, AI, and machine learning. Your digital transformation starts here.',
+        'Digital strategy, artificial intelligence and automation for businesses that want to grow, automate processes and scale results.',
       ctaPrimary: 'Get Started',
       ctaSecondary: 'Our Services',
       stat1: 'Projects Delivered',
