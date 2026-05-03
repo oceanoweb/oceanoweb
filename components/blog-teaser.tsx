@@ -30,7 +30,7 @@ export function BlogTeaser() {
           {RECENT_POSTS.map(post => (
             <article
               key={post.slug}
-              className="group flex flex-col rounded-2xl border border-border bg-card p-6 transition-all duration-300 hover:border-primary/40 hover:bg-secondary"
+              className="group relative flex flex-col rounded-2xl border border-border bg-card p-6 transition-all duration-300 hover:border-primary/40 hover:bg-secondary"
             >
               <div className="flex items-center gap-3">
                 <span className="inline-flex items-center rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-medium text-primary">
