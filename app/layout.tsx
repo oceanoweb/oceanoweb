@@ -40,16 +40,10 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: SITE_URL,
-    languages: {
-      'pt-PT': SITE_URL,
-      'pt-BR': SITE_URL,
-      'x-default': SITE_URL,
-    },
   },
   openGraph: {
     type: 'website',
     locale: 'pt_PT',
-    alternateLocale: ['pt_BR'],
     url: SITE_URL,
     title: 'Oceano Web | Transformação Digital com IA & Machine Learning',
     description:
