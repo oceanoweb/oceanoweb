@@ -72,7 +72,7 @@ export function Metrics() {
     <section
       id="resultados"
       ref={ref}
-      className="relative py-24 md:py-32 border-y border-border bg-secondary"
+      className="relative py-16 md:py-24 border-y border-border bg-secondary"
     >
       <div className="mx-auto max-w-7xl px-6">
         <div className="text-center">

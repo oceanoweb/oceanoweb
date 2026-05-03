@@ -3,17 +3,50 @@
 import { CheckCircle2 } from 'lucide-react'
 import Image from 'next/image'
 import { useLanguage } from '@/lib/language-context'
+import { BrandIcon } from '@/components/brand-icon'
+import {
+  siGoogle,
+  siMeta,
+  siMicrosoft,
+  siHubspot,
+  siGooglecloud,
+  siSalesforce,
+  siOpenai,
+  siAnthropic,
+  siNvidia,
+  siTensorflow,
+  siPytorch,
+  siMake,
+} from 'simple-icons/icons'
+
+const PLATFORM_LOGOS = [
+  { icon: siGoogle, name: 'Google' },
+  { icon: siMeta, name: 'Meta' },
+  { icon: siMicrosoft, name: 'Microsoft' },
+  { icon: siHubspot, name: 'HubSpot' },
+  { icon: siGooglecloud, name: 'Google Cloud' },
+  { icon: siSalesforce, name: 'Salesforce' },
+] as const
+
+const AI_LOGOS = [
+  { icon: siOpenai, name: 'OpenAI' },
+  { icon: siAnthropic, name: 'Anthropic' },
+  { icon: siNvidia, name: 'NVIDIA' },
+  { icon: siTensorflow, name: 'TensorFlow' },
+  { icon: siPytorch, name: 'PyTorch' },
+  { icon: siMake, name: 'Make' },
+] as const
 
 export function About() {
   const { t } = useLanguage()
 
   return (
-    <section id="sobre" className="relative py-24 md:py-32">
+    <section id="sobre" className="relative py-16 md:py-24">
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid items-center gap-16 lg:grid-cols-2">
           <div className="relative">
             <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
-              <Image src="/about-image.jpg" alt="Oceano Web" fill className="object-cover" />
+              <Image src="/about-image.webp" alt="Oceano Web" fill className="object-cover" />
               <div className="absolute inset-0 bg-primary/10" />
             </div>
             <div className="absolute -bottom-6 -right-6 hidden rounded-2xl border border-border bg-card p-6 shadow-2xl md:block">
@@ -44,6 +77,44 @@ export function About() {
                 </li>
               ))}
             </ul>
+
+            <div className="mt-10 border-t border-border pt-8 space-y-6">
+              <div>
+                <p className="mb-4 text-xs font-medium uppercase tracking-widest text-muted-foreground">
+                  {t.about.partnersTitle}
+                </p>
+                <div className="flex flex-wrap gap-x-5 gap-y-4">
+                  {PLATFORM_LOGOS.map(({ icon, name }) => (
+                    <div
+                      key={name}
+                      className="flex flex-col items-center gap-1.5 opacity-40 hover:opacity-80 transition-opacity duration-200"
+                      title={name}
+                    >
+                      <BrandIcon icon={icon} className="h-6 w-6 text-foreground" />
+                      <span className="text-[10px] text-muted-foreground">{name}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <p className="mb-4 text-xs font-medium uppercase tracking-widest text-muted-foreground">
+                  {t.about.aiTitle}
+                </p>
+                <div className="flex flex-wrap gap-x-5 gap-y-4">
+                  {AI_LOGOS.map(({ icon, name }) => (
+                    <div
+                      key={name}
+                      className="flex flex-col items-center gap-1.5 opacity-40 hover:opacity-80 transition-opacity duration-200"
+                      title={name}
+                    >
+                      <BrandIcon icon={icon} className="h-6 w-6 text-foreground" />
+                      <span className="text-[10px] text-muted-foreground">{name}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
