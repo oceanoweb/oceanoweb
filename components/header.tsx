@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import { Menu, X, Globe } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
+import Link from 'next/link'
 import { useLanguage } from '@/lib/language-context'
 
 export function Header() {
@@ -50,13 +51,13 @@ export function Header() {
 
         <nav aria-label="Navegação principal" className="hidden items-center gap-8 md:flex">
           {navLinks.map(link => (
-            <a
+            <Link
               key={link.href}
               href={link.href}
               className="text-sm text-muted-foreground transition-colors hover:text-primary"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
@@ -105,14 +106,14 @@ export function Header() {
         <div className="border-t border-border bg-background/95 backdrop-blur-xl md:hidden">
           <nav id="mobile-nav" aria-label="Menu de navegação" className="mx-auto flex max-w-7xl flex-col gap-1 px-6 py-4">
             {navLinks.map(link => (
-              <a
+              <Link
                 key={link.href}
                 href={link.href}
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="rounded-lg px-4 py-3 text-sm text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
             <Button asChild className="mt-2 bg-primary text-primary-foreground hover:bg-primary/90">
               <a href="#contato" onClick={() => setIsMobileMenuOpen(false)}>
