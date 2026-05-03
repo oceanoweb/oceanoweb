@@ -313,7 +313,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'Implementámos um pipeline de automação que integrava o sistema de tracking de transportadoras com o ERP e com a plataforma de email. Cada actualização de estado disparava automaticamente uma notificação ao cliente, actualizava o registo interno e classificava os envios que requeriam atenção manual.',
+        text: 'Implementámos um pipeline de automação que integrava o sistema de tracking de transportadoras com o ERP e com a plataforma de email. Cada atualização de estado disparava automaticamente uma notificação ao cliente, actualizava o registo interno e classificava os envios que requeriam atenção manual.',
       },
       {
         type: 'h3',
@@ -371,7 +371,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'Um retailer com presença em três marketplaces (Amazon, FNAC e loja própria) geria o stock manualmente. Actualizações de inventário eram feitas canal a canal, com atraso de horas entre a venda e a actualização dos outros canais. Resultado: vendas duplicadas, penalizações dos marketplaces e clientes insatisfeitos.',
+        text: 'Um retailer com presença em três marketplaces (Amazon, FNAC e loja própria) geria o stock manualmente. Atualizações de inventário eram feitas canal a canal, com atraso de horas entre a venda e a actualização dos outros canais. Resultado: vendas duplicadas, penalizações dos marketplaces e clientes insatisfeitos.',
       },
       {
         type: 'h3',

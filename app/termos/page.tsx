@@ -37,7 +37,7 @@ export default function TermosPage() {
 
       <main className="mx-auto max-w-4xl px-6 py-16 md:py-24">
         <h1 className="font-heading text-4xl font-bold text-foreground">Termos de Serviço</h1>
-        <p className="mt-3 text-sm text-muted-foreground">Última actualização: Maio de 2026</p>
+        <p className="mt-3 text-sm text-muted-foreground">Última atualização: Maio de 2026</p>
 
         <div className="mt-12 space-y-12 text-base leading-relaxed text-muted-foreground">
           <section>
