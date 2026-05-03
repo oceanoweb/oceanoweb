@@ -37,6 +37,7 @@ export function Footer() {
     { label: t.nav.servicos, href: '#servicos' },
     { label: t.nav.sobre, href: '#sobre' },
     { label: t.nav.resultados, href: '#resultados' },
+    { label: t.footer.blogLink, href: '/blog' },
     { label: t.nav.contato, href: '#contato' },
   ]
 

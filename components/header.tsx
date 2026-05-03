@@ -16,6 +16,7 @@ export function Header() {
     { label: t.nav.servicos, href: '#servicos' },
     { label: t.nav.sobre, href: '#sobre' },
     { label: t.nav.resultados, href: '#resultados' },
+    { label: t.nav.blog, href: '/blog' },
     { label: t.nav.contato, href: '#contato' },
   ]
 

@@ -9,6 +9,7 @@ import { Process } from '@/components/process'
 import { About } from '@/components/about'
 import { Metrics } from '@/components/metrics'
 import { Testimonials } from '@/components/testimonials'
+import { BlogTeaser } from '@/components/blog-teaser'
 import { Faq } from '@/components/faq'
 import { CtaSection } from '@/components/cta-section'
 import { Footer } from '@/components/footer'
@@ -29,6 +30,7 @@ export function HomePage() {
         <About />
         <Metrics />
         <Testimonials />
+        <BlogTeaser />
         <Faq />
         <CtaSection />
         <Footer />
