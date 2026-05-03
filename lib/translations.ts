@@ -96,9 +96,9 @@ export const translations = {
       title: 'Números que falam por si',
       stats: [
         { value: 50, suffix: '+', label: 'Projetos Entregues' },
-        { value: 98, suffix: '%', label: 'Taxa de Satisfação' },
-        { value: 50, suffix: 'M+', label: 'Dados Processados' },
-        { value: 3, suffix: 'x', label: 'ROI Médio dos Clientes' },
+        { value: 98, suffix: '%', label: 'Taxa de Retenção' },
+        { value: 12, suffix: '+', label: 'Sectores Atendidos' },
+        { value: 3, suffix: 'x', label: 'ROI Médio por Projecto' },
       ],
     },
     testimonials: {
@@ -263,9 +263,9 @@ export const translations = {
       title: 'Numbers that speak for themselves',
       stats: [
         { value: 50, suffix: '+', label: 'Projects Delivered' },
-        { value: 98, suffix: '%', label: 'Satisfaction Rate' },
-        { value: 50, suffix: 'M+', label: 'Data Processed' },
-        { value: 3, suffix: 'x', label: 'Average Client ROI' },
+        { value: 98, suffix: '%', label: 'Retention Rate' },
+        { value: 12, suffix: '+', label: 'Industries Served' },
+        { value: 3, suffix: 'x', label: 'Average Project ROI' },
       ],
     },
     testimonials: {
