@@ -248,6 +248,32 @@ export const translations = {
         'Analytics & BI',
       ],
     },
+    blog: {
+      layout: {
+        backToHome: '← Página inicial',
+      },
+      page: {
+        eyebrow: 'Blog',
+        title: 'Insights sobre IA, tecnologia e crescimento digital',
+        description:
+          'Conteúdo prático para líderes e equipas que querem transformar os seus negócios com inteligência artificial e marketing digital.',
+        readArticle: 'Ler artigo',
+        ctaTitle: 'Pronto para transformar a sua empresa?',
+        ctaDescription:
+          'Fale com um especialista e descubra como IA e tecnologia podem impulsionar o seu crescimento.',
+        ctaButton: 'Falar com um Especialista',
+      },
+      post: {
+        backToAll: 'Todos os artigos',
+        readingTime: 'min de leitura',
+        ctaTitle: 'Pronto para avançar?',
+        ctaDescription:
+          'Fale com um especialista e perceba como podemos ajudar a sua empresa a crescer com IA e tecnologia. Resposta em até 24 horas.',
+        ctaButton: 'Falar com um Especialista',
+        whatsapp: 'Conversar no WhatsApp',
+        backToAllBottom: 'Ver todos os artigos',
+      },
+    },
   },
   en: {
     nav: {
@@ -495,6 +521,32 @@ export const translations = {
         'Automation',
         'Analytics & BI',
       ],
+    },
+    blog: {
+      layout: {
+        backToHome: '← Home',
+      },
+      page: {
+        eyebrow: 'Blog',
+        title: 'Insights on AI, technology and digital growth',
+        description:
+          'Practical content for leaders and teams who want to transform their businesses with artificial intelligence and digital marketing.',
+        readArticle: 'Read article',
+        ctaTitle: 'Ready to transform your company?',
+        ctaDescription:
+          'Talk to a specialist and discover how AI and technology can drive your growth.',
+        ctaButton: 'Talk to a Specialist',
+      },
+      post: {
+        backToAll: 'All articles',
+        readingTime: 'min read',
+        ctaTitle: 'Ready to move forward?',
+        ctaDescription:
+          'Talk to a specialist and find out how we can help your business grow with AI and technology. Response within 24 hours.',
+        ctaButton: 'Talk to a Specialist',
+        whatsapp: 'Chat on WhatsApp',
+        backToAllBottom: 'View all articles',
+      },
     },
   },
 } as const
