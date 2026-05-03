@@ -1,7 +1,12 @@
+'use client'
+
 import Link from 'next/link'
 import Image from 'next/image'
+import { useLanguage } from '@/lib/language-context'
 
 export default function BlogLayout({ children }: { children: React.ReactNode }) {
+  const { t } = useLanguage()
+
   return (
     <div className="min-h-screen bg-background text-foreground">
       <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur-sm">
@@ -22,7 +27,7 @@ export default function BlogLayout({ children }: { children: React.ReactNode }) 
             href="/"
             className="text-sm text-muted-foreground transition-colors hover:text-primary"
           >
-            ← Página inicial
+            {t.blog.layout.backToHome}
           </Link>
         </div>
       </header>
@@ -31,13 +36,13 @@ export default function BlogLayout({ children }: { children: React.ReactNode }) 
 
       <footer className="mt-8 border-t border-border">
         <div className="mx-auto flex max-w-7xl flex-col gap-2 px-6 py-8 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
-          <p>© 2026 Oceano Web. Todos os direitos reservados.</p>
+          <p>© {t.footer.copyright}</p>
           <div className="flex gap-4">
             <Link href="/privacidade" className="transition-colors hover:text-primary">
-              Política de Privacidade
+              {t.footer.privacyLink}
             </Link>
             <Link href="/termos" className="transition-colors hover:text-primary">
-              Termos de Serviço
+              {t.footer.termsLink}
             </Link>
           </div>
         </div>
