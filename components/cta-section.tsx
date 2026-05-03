@@ -7,6 +7,7 @@ import { useLanguage } from '@/lib/language-context'
 import { BrandIcon } from '@/components/brand-icon'
 import { siWhatsapp } from 'simple-icons/icons'
 import { sendContactEmail } from '@/lib/send-email'
+import { trackEvent } from '@/lib/gtag'
 import { CONTACT_EMAIL, PHONE_NUMBER_DISPLAY, PHONE_LINK, WHATSAPP_LINK } from '@/lib/site-config'
 
 export function CtaSection() {
@@ -31,6 +32,7 @@ export function CtaSection() {
     try {
       await sendContactEmail(data)
       setSubmitted(true)
+      trackEvent('generate_lead', { method: 'contact_form' })
     } catch {
       // TODO: replace with Sentry captureException for proper error tracking
       setError('Erro ao enviar mensagem. Tente novamente.')
@@ -75,6 +77,7 @@ export function CtaSection() {
                 href={PHONE_LINK}
                 className="flex items-center gap-3 text-sm text-muted-foreground transition-colors hover:text-primary"
                 aria-label="Ligar para Oceano Web"
+                onClick={() => trackEvent('contact', { method: 'phone' })}
               >
                 <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
                   <Phone className="h-5 w-5 text-primary" />
@@ -87,6 +90,7 @@ export function CtaSection() {
                 rel="noreferrer"
                 className="flex items-center gap-3 text-sm text-muted-foreground transition-colors hover:text-primary"
                 aria-label="Falar no WhatsApp"
+                onClick={() => trackEvent('contact', { method: 'whatsapp' })}
               >
                 <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
                   <BrandIcon icon={siWhatsapp} className="h-5 w-5 text-primary" />

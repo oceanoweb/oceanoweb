@@ -4,6 +4,7 @@ import { ArrowRight, Sparkles } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 import { useLanguage } from '@/lib/language-context'
+import { trackEvent } from '@/lib/gtag'
 
 export function Hero() {
   const { t } = useLanguage()
@@ -52,7 +53,7 @@ export function Hero() {
               size="lg"
               className="bg-primary text-primary-foreground hover:bg-primary/90 gap-2 text-base font-medium px-8"
             >
-              <a href="#contato">
+              <a href="#contato" onClick={() => trackEvent('cta_click', { cta_name: 'comece_agora' })}>
                 {t.hero.ctaPrimary}
                 <ArrowRight className="h-5 w-5" />
               </a>

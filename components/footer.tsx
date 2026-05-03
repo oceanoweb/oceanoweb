@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { useLanguage } from '@/lib/language-context'
+import { trackEvent } from '@/lib/gtag'
 import { BrandIcon } from '@/components/brand-icon'
 import { siInstagram, siLinkedin, siWhatsapp } from 'simple-icons/icons'
 import {
@@ -20,9 +21,14 @@ export function Footer() {
   const { t } = useLanguage()
 
   const socialLinks = [
-    { icon: siLinkedin, href: LINKEDIN_URL, label: 'LinkedIn' },
-    { icon: siInstagram, href: INSTAGRAM_URL, label: 'Instagram' },
-    { icon: siWhatsapp, href: WHATSAPP_LINK, label: 'WhatsApp' },
+    { icon: siLinkedin, href: LINKEDIN_URL, label: 'LinkedIn', onClick: undefined },
+    { icon: siInstagram, href: INSTAGRAM_URL, label: 'Instagram', onClick: undefined },
+    {
+      icon: siWhatsapp,
+      href: WHATSAPP_LINK,
+      label: 'WhatsApp',
+      onClick: () => trackEvent('contact', { method: 'whatsapp' }),
+    },
   ]
 
   const navLinks = [
@@ -62,6 +68,7 @@ export function Footer() {
                   rel="noreferrer"
                   className="flex h-10 w-10 items-center justify-center rounded-lg border border-border text-muted-foreground transition-colors hover:border-primary hover:text-primary"
                   aria-label={social.label}
+                  onClick={social.onClick}
                 >
                   <BrandIcon icon={social.icon} className="h-4 w-4" />
                 </a>
