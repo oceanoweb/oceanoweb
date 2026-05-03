@@ -91,6 +91,36 @@ export const translations = {
       partnersTitle: 'Plataformas & Parceiros',
       aiTitle: 'IA & Machine Learning',
     },
+    process: {
+      subtitle: 'Como trabalhamos',
+      title: 'Um processo claro do início ao resultado',
+      steps: [
+        {
+          number: '01',
+          title: 'Diagnóstico',
+          description:
+            'Analisamos o seu negócio, os objectivos estratégicos e o ponto de partida actual para identificar as melhores oportunidades.',
+        },
+        {
+          number: '02',
+          title: 'Estratégia',
+          description:
+            'Definimos o plano de acção com prioridades, métricas de sucesso e prazos realistas alinhados ao seu negócio.',
+        },
+        {
+          number: '03',
+          title: 'Implementação',
+          description:
+            'Executamos com metodologia ágil, entregas iterativas e acompanhamento próximo em cada etapa do projecto.',
+        },
+        {
+          number: '04',
+          title: 'Resultados',
+          description:
+            'Medimos o impacto, optimizamos o que funciona e escalamos os resultados de forma contínua e mensurável.',
+        },
+      ],
+    },
     metrics: {
       subtitle: 'Resultados que importam',
       title: 'Números que falam por si',
@@ -257,6 +287,36 @@ export const translations = {
       yearsLabel2: 'experience',
       partnersTitle: 'Platforms & Partners',
       aiTitle: 'AI & Machine Learning',
+    },
+    process: {
+      subtitle: 'How we work',
+      title: 'A clear process from start to results',
+      steps: [
+        {
+          number: '01',
+          title: 'Diagnosis',
+          description:
+            'We analyse your business, strategic objectives and current starting point to identify the best opportunities.',
+        },
+        {
+          number: '02',
+          title: 'Strategy',
+          description:
+            'We define the action plan with priorities, success metrics and realistic timelines aligned to your business.',
+        },
+        {
+          number: '03',
+          title: 'Implementation',
+          description:
+            'We execute with agile methodology, iterative deliveries and close monitoring at every stage of the project.',
+        },
+        {
+          number: '04',
+          title: 'Results',
+          description:
+            'We measure the impact, optimise what works and scale results in a continuous and measurable way.',
+        },
+      ],
     },
     metrics: {
       subtitle: 'Results that matter',

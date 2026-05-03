@@ -5,6 +5,7 @@ import { Header } from '@/components/header'
 import { Hero } from '@/components/hero'
 import { MarqueeBand } from '@/components/marquee-band'
 import { Services } from '@/components/services'
+import { Process } from '@/components/process'
 import { About } from '@/components/about'
 import { Metrics } from '@/components/metrics'
 import { Testimonials } from '@/components/testimonials'
@@ -22,6 +23,7 @@ export function HomePage() {
         <Hero />
         <MarqueeBand />
         <Services />
+        <Process />
         <About />
         <Metrics />
         <Testimonials />
