@@ -10,7 +10,8 @@ import {
   SITE_URL,
   PHONE_NUMBER_DISPLAY,
 } from '@/lib/site-config'
-import { GoogleAnalytics } from '@/components/google-analytics'
+import { CookieConsent } from '@/components/cookie-consent'
+import { LanguageProvider } from '@/lib/language-context'
 
 import './globals.css'
 
@@ -27,17 +28,27 @@ export const metadata: Metadata = {
     'inteligência artificial',
     'machine learning',
     'agência digital',
+    'agência digital Portugal',
+    'agência digital Brasil',
+    'transformação digital Portugal',
+    'inteligência artificial para empresas',
+    'automação de processos Portugal',
+    'growth marketing Portugal',
     'desenvolvimento web',
     'marketing digital',
     'automação',
-    'Portugal',
   ],
   alternates: {
     canonical: SITE_URL,
+    languages: {
+      pt: SITE_URL,
+      'x-default': SITE_URL,
+    },
   },
   openGraph: {
     type: 'website',
-    locale: 'pt_BR',
+    locale: 'pt_PT',
+    alternateLocale: ['pt_BR'],
     url: SITE_URL,
     title: 'Oceano Web | Transformação Digital com IA & Machine Learning',
     description:
@@ -49,7 +60,7 @@ export const metadata: Metadata = {
         secureUrl: OG_IMAGE,
         width: 1200,
         height: 630,
-        alt: 'Oceano Web — Agência de Transformação Digital',
+        alt: 'Oceano Web, Agência de Transformação Digital',
       },
     ],
   },
@@ -96,7 +107,7 @@ export default function RootLayout({
       url: SITE_URL,
       logo: {
         '@type': 'ImageObject',
-        url: `${SITE_URL}/logo.jpg`,
+        url: `${SITE_URL}/logo.png`,
         width: '512',
         height: '512',
       },
@@ -124,16 +135,16 @@ export default function RootLayout({
   ]
 
   return (
-    <html lang="pt-BR" className="scroll-smooth">
-      <head>
-        <GoogleAnalytics />
-      </head>
+    <html lang="pt-PT" className="scroll-smooth">
       <body className={`${_inter.variable} ${_spaceGrotesk.variable} font-sans antialiased`}>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
-        {children}
+        <LanguageProvider>
+          {children}
+          <CookieConsent />
+        </LanguageProvider>
       </body>
     </html>
   )

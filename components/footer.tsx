@@ -1,7 +1,10 @@
 'use client'
 
+import Link from 'next/link'
 import Image from 'next/image'
 import { useLanguage } from '@/lib/language-context'
+import { trackEvent } from '@/lib/gtag'
+import { services } from '@/lib/services-data'
 import { BrandIcon } from '@/components/brand-icon'
 import { siInstagram, siLinkedin, siWhatsapp } from 'simple-icons/icons'
 import {
@@ -19,9 +22,14 @@ export function Footer() {
   const { t } = useLanguage()
 
   const socialLinks = [
-    { icon: siLinkedin, href: LINKEDIN_URL, label: 'LinkedIn' },
-    { icon: siInstagram, href: INSTAGRAM_URL, label: 'Instagram' },
-    { icon: siWhatsapp, href: WHATSAPP_LINK, label: 'WhatsApp' },
+    { icon: siLinkedin, href: LINKEDIN_URL, label: 'LinkedIn', onClick: undefined },
+    { icon: siInstagram, href: INSTAGRAM_URL, label: 'Instagram', onClick: undefined },
+    {
+      icon: siWhatsapp,
+      href: WHATSAPP_LINK,
+      label: 'WhatsApp',
+      onClick: () => trackEvent('contact', { method: 'whatsapp' }),
+    },
   ]
 
   const navLinks = [
@@ -29,6 +37,7 @@ export function Footer() {
     { label: t.nav.servicos, href: '#servicos' },
     { label: t.nav.sobre, href: '#sobre' },
     { label: t.nav.resultados, href: '#resultados' },
+    { label: t.footer.blogLink, href: '/blog' },
     { label: t.nav.contato, href: '#contato' },
   ]
 
@@ -61,6 +70,7 @@ export function Footer() {
                   rel="noreferrer"
                   className="flex h-10 w-10 items-center justify-center rounded-lg border border-border text-muted-foreground transition-colors hover:border-primary hover:text-primary"
                   aria-label={social.label}
+                  onClick={social.onClick}
                 >
                   <BrandIcon icon={social.icon} className="h-4 w-4" />
                 </a>
@@ -91,14 +101,14 @@ export function Footer() {
               {t.footer.servicesTitle}
             </h3>
             <ul className="mt-4 flex flex-col gap-3">
-              {t.footer.serviceLinks.map(label => (
+              {t.footer.serviceLinks.map((label, index) => (
                 <li key={label}>
-                  <a
-                    href="#servicos"
+                  <Link
+                    href={`/servicos/${services[index].slug}`}
                     className="text-sm text-muted-foreground transition-colors hover:text-primary"
                   >
                     {label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -139,8 +149,28 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 flex items-center justify-center border-t border-border pt-8">
-          <p className="text-sm text-muted-foreground">{t.footer.copyright}</p>
+        <div className="mt-12 flex flex-col gap-3 border-t border-border pt-8 sm:flex-row sm:items-center sm:justify-between">
+          <p className="text-sm text-muted-foreground">© {t.footer.copyright}</p>
+          <div className="flex gap-4">
+            <Link
+              href="/privacidade"
+              className="text-sm text-muted-foreground transition-colors hover:text-primary"
+            >
+              {t.footer.privacyLink}
+            </Link>
+            <Link
+              href="/termos"
+              className="text-sm text-muted-foreground transition-colors hover:text-primary"
+            >
+              {t.footer.termsLink}
+            </Link>
+            <button
+              onClick={() => window.dispatchEvent(new Event('cookie-preferences-open'))}
+              className="text-sm text-muted-foreground transition-colors hover:text-primary"
+            >
+              {t.footer.cookiePreferencesLink}
+            </button>
+          </div>
         </div>
       </div>
     </footer>
