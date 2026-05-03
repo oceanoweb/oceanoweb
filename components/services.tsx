@@ -1,7 +1,9 @@
 'use client'
 
+import Link from 'next/link'
 import { Brain, BarChart3, Zap, Globe, Cpu, TrendingUp } from 'lucide-react'
 import { useLanguage } from '@/lib/language-context'
+import { services } from '@/lib/services-data'
 
 const icons = [Brain, Cpu, TrendingUp, Zap, BarChart3, Globe]
 
@@ -26,6 +28,7 @@ export function Services() {
         <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {t.services.items.map((service, index) => {
             const Icon = icons[index]
+            const slug = services[index]?.slug
             return (
               <article
                 key={service.title}
@@ -41,9 +44,18 @@ export function Services() {
                   {service.description}
                 </p>
                 <div className="mt-6">
-                  <span className="text-sm font-medium text-primary opacity-0 transition-opacity group-hover:opacity-100">
-                    {t.services.learnMore}
-                  </span>
+                  {slug ? (
+                    <Link
+                      href={`/servicos/${slug}`}
+                      className="text-sm font-medium text-primary opacity-0 transition-opacity group-hover:opacity-100"
+                    >
+                      {t.services.learnMore}
+                    </Link>
+                  ) : (
+                    <span className="text-sm font-medium text-primary opacity-0 transition-opacity group-hover:opacity-100">
+                      {t.services.learnMore}
+                    </span>
+                  )}
                 </div>
               </article>
             )
