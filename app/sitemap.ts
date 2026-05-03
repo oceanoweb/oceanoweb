@@ -1,6 +1,7 @@
 import type { MetadataRoute } from 'next'
 import { SITE_URL } from '@/lib/site-config'
 import { services } from '@/lib/services-data'
+import { blogPosts } from '@/lib/blog-data'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const serviceEntries: MetadataRoute.Sitemap = services.map(s => ({
@@ -8,6 +9,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date('2026-05-03'),
     changeFrequency: 'monthly',
     priority: 0.8,
+  }))
+
+  const blogEntries: MetadataRoute.Sitemap = blogPosts.map(p => ({
+    url: `${SITE_URL}/blog/${p.slug}`,
+    lastModified: new Date(p.date),
+    changeFrequency: 'monthly',
+    priority: 0.7,
   }))
 
   return [
@@ -20,6 +28,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     ...serviceEntries,
+    {
+      url: `${SITE_URL}/blog`,
+      lastModified: new Date('2026-05-03'),
+      changeFrequency: 'weekly',
+      priority: 0.7,
+    },
+    ...blogEntries,
     {
       url: `${SITE_URL}/privacidade`,
       lastModified: new Date('2026-05-03'),
