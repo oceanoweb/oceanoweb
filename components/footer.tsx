@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import Image from 'next/image'
 import { useLanguage } from '@/lib/language-context'
 import { BrandIcon } from '@/components/brand-icon'
@@ -139,8 +140,22 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 flex items-center justify-center border-t border-border pt-8">
-          <p className="text-sm text-muted-foreground">{t.footer.copyright}</p>
+        <div className="mt-12 flex flex-col gap-3 border-t border-border pt-8 sm:flex-row sm:items-center sm:justify-between">
+          <p className="text-sm text-muted-foreground">© {t.footer.copyright}</p>
+          <div className="flex gap-4">
+            <Link
+              href="/privacidade"
+              className="text-sm text-muted-foreground transition-colors hover:text-primary"
+            >
+              {t.footer.privacyLink}
+            </Link>
+            <Link
+              href="/termos"
+              className="text-sm text-muted-foreground transition-colors hover:text-primary"
+            >
+              {t.footer.termsLink}
+            </Link>
+          </div>
         </div>
       </div>
     </footer>

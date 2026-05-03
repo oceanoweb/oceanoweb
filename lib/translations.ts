@@ -235,6 +235,8 @@ export const translations = {
       servicesTitle: 'Serviços',
       contactTitle: 'Contato',
       copyright: '2026 Oceano Web. Todos os direitos reservados.',
+      privacyLink: 'Política de Privacidade',
+      termsLink: 'Termos de Serviço',
       serviceLinks: [
         'Inteligência Artificial',
         'Machine Learning',
@@ -478,6 +480,8 @@ export const translations = {
       servicesTitle: 'Services',
       contactTitle: 'Contact',
       copyright: '2026 Oceano Web. All rights reserved.',
+      privacyLink: 'Privacy Policy',
+      termsLink: 'Terms of Service',
       serviceLinks: [
         'Artificial Intelligence',
         'Machine Learning',
