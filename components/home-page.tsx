@@ -9,6 +9,7 @@ import { Process } from '@/components/process'
 import { About } from '@/components/about'
 import { Metrics } from '@/components/metrics'
 import { Testimonials } from '@/components/testimonials'
+import { Faq } from '@/components/faq'
 import { CtaSection } from '@/components/cta-section'
 import { Footer } from '@/components/footer'
 import { BrandIcon } from '@/components/brand-icon'
@@ -27,6 +28,7 @@ export function HomePage() {
         <About />
         <Metrics />
         <Testimonials />
+        <Faq />
         <CtaSection />
         <Footer />
       </main>

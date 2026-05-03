@@ -164,6 +164,52 @@ export const translations = {
         },
       ],
     },
+    faq: {
+      subtitle: 'FAQ',
+      title: 'Perguntas frequentes',
+      items: [
+        {
+          question: 'Trabalham com empresas de que dimensão?',
+          answer:
+            'Trabalhamos com PMEs e grandes empresas em Portugal e no Brasil. Não existe um tamanho mínimo — o que importa é que a empresa queira crescer, automatizar ou digitalizar processos de forma estratégica.',
+        },
+        {
+          question: 'Operam em Portugal e no Brasil?',
+          answer:
+            'Sim. Temos experiência de trabalho com empresas em ambos os mercados. Operamos de forma remota e presencial conforme a necessidade de cada projecto.',
+        },
+        {
+          question: 'Quanto tempo demora um projecto de transformação digital?',
+          answer:
+            'Depende do âmbito. Projectos de menor escala, como um site ou automação pontual, podem estar concluídos em 4 a 8 semanas. Projectos de transformação mais abrangentes têm duração de 3 a 12 meses, com entregas iterativas ao longo do caminho.',
+        },
+        {
+          question: 'Qual é o investimento mínimo para começar?',
+          answer:
+            'Cada projecto é orçamentado com base nos objectivos e no âmbito definidos no diagnóstico. Entraremos em contacto após o formulário para perceber a melhor forma de avançar.',
+        },
+        {
+          question: 'Como é o processo de onboarding?',
+          answer:
+            'Após o primeiro contacto, fazemos uma sessão de diagnóstico para entender o negócio e os objectivos. Com base nisso, apresentamos uma proposta com escopo, prazos e investimento. O projecto arranca assim que a proposta for aprovada.',
+        },
+        {
+          question: 'Fazem acompanhamento após a entrega?',
+          answer:
+            'Sim. Todos os projectos incluem um período de acompanhamento pós-entrega. Para clientes que pretendam uma parceria contínua, oferecemos planos de manutenção, monitorização e optimização.',
+        },
+        {
+          question: 'Que tecnologias e plataformas utilizam?',
+          answer:
+            'Trabalhamos com as principais plataformas do mercado: Google Cloud, Microsoft Azure, OpenAI, Meta, HubSpot, entre outras. A escolha tecnológica é sempre feita com base no que melhor serve os objectivos do cliente.',
+        },
+        {
+          question: 'Como medem os resultados?',
+          answer:
+            'Definimos KPIs claros no início de cada projecto e implementamos rastreamento via Google Analytics 4, dashboards de BI e relatórios periódicos. Cada decisão é orientada por dados.',
+        },
+      ],
+    },
     cta: {
       subtitle: 'Contato',
       title: 'Vamos falar sobre o crescimento da sua empresa',
@@ -358,6 +404,52 @@ export const translations = {
             'The custom platform that Oceano Web developed for Concur revolutionized how we manage content. Professional website, complete video publishing system, live streaming, and an intuitive dashboard that centralized our entire operation. We increased engagement by 200%.',
           author: 'Rodrigo Fernandes',
           role: 'CTO, Concur',
+        },
+      ],
+    },
+    faq: {
+      subtitle: 'FAQ',
+      title: 'Frequently asked questions',
+      items: [
+        {
+          question: 'What size companies do you work with?',
+          answer:
+            'We work with SMEs and large companies in Portugal and Brazil. There is no minimum size — what matters is that the company wants to grow, automate or digitise processes strategically.',
+        },
+        {
+          question: 'Do you operate in Portugal and Brazil?',
+          answer:
+            'Yes. We have experience working with companies in both markets. We operate remotely and in person depending on the needs of each project.',
+        },
+        {
+          question: 'How long does a digital transformation project take?',
+          answer:
+            'It depends on the scope. Smaller projects, such as a website or one-off automation, can be completed in 4 to 8 weeks. More comprehensive transformation projects run from 3 to 12 months, with iterative deliveries along the way.',
+        },
+        {
+          question: 'What is the minimum investment to get started?',
+          answer:
+            'Each project is budgeted based on the objectives and scope defined during diagnosis. We will get in touch after the form to understand the best way to move forward.',
+        },
+        {
+          question: 'What does the onboarding process look like?',
+          answer:
+            'After the first contact, we run a diagnosis session to understand the business and objectives. Based on that, we present a proposal with scope, timelines and investment. The project kicks off once the proposal is approved.',
+        },
+        {
+          question: 'Do you provide support after delivery?',
+          answer:
+            'Yes. All projects include a post-delivery support period. For clients who want an ongoing partnership, we offer maintenance, monitoring and optimisation plans.',
+        },
+        {
+          question: 'What technologies and platforms do you use?',
+          answer:
+            'We work with leading market platforms: Google Cloud, Microsoft Azure, OpenAI, Meta, HubSpot, among others. The technology choice is always based on what best serves the client\'s objectives.',
+        },
+        {
+          question: 'How do you measure results?',
+          answer:
+            'We define clear KPIs at the start of each project and implement tracking via Google Analytics 4, BI dashboards and periodic reports. Every decision is data-driven.',
         },
       ],
     },
