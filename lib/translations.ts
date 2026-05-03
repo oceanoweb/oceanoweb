@@ -252,6 +252,10 @@ export const translations = {
       layout: {
         backToHome: '← Página inicial',
       },
+      teaser: {
+        title: 'Insights sobre IA e transformação digital',
+        viewAll: 'Ver todos os artigos',
+      },
       page: {
         eyebrow: 'Blog',
         title: 'Insights sobre IA, tecnologia e crescimento digital',
@@ -525,6 +529,10 @@ export const translations = {
     blog: {
       layout: {
         backToHome: '← Home',
+      },
+      teaser: {
+        title: 'Insights on AI and digital transformation',
+        viewAll: 'View all articles',
       },
       page: {
         eyebrow: 'Blog',

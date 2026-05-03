@@ -3,10 +3,13 @@
 import Link from 'next/link'
 import { ArrowRight, Clock } from 'lucide-react'
 import { blogPosts, formatDate } from '@/lib/blog-data'
+import { useLanguage } from '@/lib/language-context'
 
 const RECENT_POSTS = blogPosts.slice(0, 3)
 
 export function BlogTeaser() {
+  const { t } = useLanguage()
+
   return (
     <section className="relative py-16 md:py-24">
       <div className="mx-auto max-w-7xl px-6">
@@ -14,14 +17,14 @@ export function BlogTeaser() {
           <div>
             <p className="text-sm font-medium uppercase tracking-widest text-primary">Blog</p>
             <h2 className="mt-4 font-heading text-3xl font-bold text-foreground md:text-4xl text-balance">
-              Insights sobre IA e transformação digital
+              {t.blog.teaser.title}
             </h2>
           </div>
           <Link
             href="/blog"
             className="inline-flex shrink-0 items-center gap-1.5 text-sm font-medium text-primary hover:underline"
           >
-            Ver todos os artigos
+            {t.blog.teaser.viewAll}
             <ArrowRight className="h-4 w-4" />
           </Link>
         </div>
