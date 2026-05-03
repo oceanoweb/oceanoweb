@@ -19,7 +19,7 @@ export type ServiceData = {
 export const services: ServiceData[] = [
   {
     slug: 'inteligencia-artificial',
-    metaTitle: 'Inteligência Artificial para Empresas | Oceano Web — Portugal & Brasil',
+    metaTitle: 'Inteligência Artificial para Empresas | Oceano Web, Portugal e Brasil',
     metaDescription:
       'Soluções de IA personalizadas para automatizar processos, gerar insights e aumentar resultados. Agência especializada em Portugal e Brasil. Fale com um especialista.',
     badge: 'Inteligência Artificial',
@@ -28,9 +28,9 @@ export const services: ServiceData[] = [
 
 Na Oceano Web, implementamos soluções de IA personalizadas que se integram directamente nos processos do seu negócio. Não trabalhamos com soluções genéricas: cada projecto começa por um diagnóstico aprofundado das necessidades da sua empresa, seguido de uma implementação pragmática orientada a resultados mensuráveis.
 
-As nossas soluções de IA cobrem desde automação de atendimento ao cliente com modelos de linguagem (LLMs), passando por classificação e análise de dados não estruturados, até sistemas de recomendação e detecção de anomalias em operações críticas. Trabalhamos com as principais plataformas do mercado — OpenAI, Google Cloud AI, Microsoft Azure AI — e integramos com os sistemas que a sua empresa já utiliza.
+As nossas soluções de IA cobrem desde automação de atendimento ao cliente com modelos de linguagem (LLMs), passando por classificação e análise de dados não estruturados, até sistemas de recomendação e detecção de anomalias em operações críticas. Trabalhamos com as principais plataformas do mercado, como OpenAI, Google Cloud AI e Microsoft Azure AI, e integramos com os sistemas que a sua empresa já utiliza.
 
-O impacto é concreto: clientes que implementaram IA nos processos de atendimento reduziram o tempo de resposta em até 70%. Empresas que adoptaram modelos preditivos para gestão de stock reduziram desperdício em 30%. Estas não são promessas — são resultados documentados de projectos que entregámos.`,
+O impacto é concreto: clientes que implementaram IA nos processos de atendimento reduziram o tempo de resposta em até 70%. Empresas que adoptaram modelos preditivos para gestão de stock reduziram desperdício em 30%. Estas não são promessas. São resultados documentados de projectos que entregámos.`,
     benefits: [
       {
         title: 'Automação de atendimento',
@@ -87,16 +87,16 @@ O impacto é concreto: clientes que implementaram IA nos processos de atendiment
   },
   {
     slug: 'machine-learning',
-    metaTitle: 'Machine Learning para Empresas | Oceano Web — Portugal & Brasil',
+    metaTitle: 'Machine Learning para Empresas | Oceano Web, Portugal e Brasil',
     metaDescription:
       'Modelos preditivos e algoritmos de machine learning que transformam os seus dados em vantagem competitiva real. Consultoria especializada em Portugal e Brasil.',
     badge: 'Machine Learning',
     headline: 'Machine Learning que transforma dados em decisões e vantagem competitiva',
     intro: `Os dados que a sua empresa acumula todos os dias são um activo estratégico subutilizado. Com machine learning, esses dados tornam-se previsões precisas, padrões identificáveis e decisões automatizadas que aceleram o crescimento do negócio.
 
-A Oceano Web desenvolve modelos de machine learning personalizados para empresas em Portugal e no Brasil, focados em problemas de negócio reais: previsão de vendas, segmentação de clientes, optimização de operações e muito mais. Não entregamos código — entregamos resultados mensuráveis integrados nos seus processos.
+A Oceano Web desenvolve modelos de machine learning personalizados para empresas em Portugal e no Brasil, focados em problemas de negócio reais: previsão de vendas, segmentação de clientes, optimização de operações e muito mais. Não entregamos código. Entregamos resultados mensuráveis integrados nos seus processos.
 
-O nosso processo começa pela compreensão do problema de negócio, não pela escolha do algoritmo. Depois de mapear os dados disponíveis e os objectivos do projecto, seleccionamos e treinamos os modelos mais adequados — regressão, classificação, clustering, séries temporais ou redes neuronais — e integramos os outputs directamente nos fluxos de trabalho existentes.
+O nosso processo começa pela compreensão do problema de negócio, não pela escolha do algoritmo. Depois de mapear os dados disponíveis e os objectivos do projecto, seleccionamos e treinamos os modelos mais adequados, seja regressão, classificação, clustering, séries temporais ou redes neuronais, e integramos os outputs directamente nos fluxos de trabalho existentes.
 
 A manutenção e monitorização dos modelos em produção é parte do nosso serviço. Um modelo de ML degrada com o tempo se não for monitorado e retreinado periodicamente. Garantimos que os modelos continuam precisos e relevantes à medida que os dados e o negócio evoluem.`,
     benefits: [
@@ -155,14 +155,14 @@ A manutenção e monitorização dos modelos em produção é parte do nosso ser
   },
   {
     slug: 'crescimento-digital',
-    metaTitle: 'Growth Marketing e Crescimento Digital | Oceano Web — Portugal & Brasil',
+    metaTitle: 'Growth Marketing e Crescimento Digital | Oceano Web, Portugal e Brasil',
     metaDescription:
       'Estratégias de growth marketing orientadas por dados para escalar presença digital, aumentar leads e multiplicar resultados. Agência especializada em Portugal e Brasil.',
     badge: 'Crescimento Digital',
     headline: 'Crescimento digital orientado por dados para empresas que querem escalar',
     intro: `Crescer digitalmente não é uma questão de publicar mais conteúdo ou investir mais em anúncios. É uma questão de sistema: testes estruturados, hipóteses validadas, canais optimizados e funis que convertem de forma consistente e escalável.
 
-A Oceano Web desenvolve estratégias de growth marketing para empresas em Portugal e no Brasil que querem sair de um crescimento dependente de esforço manual para um crescimento alavancado por dados e automação. Trabalhamos ao longo de todo o funil — aquisição, activação, retenção, receita e referência — identificando os pontos de maior alavancagem para cada negócio.
+A Oceano Web desenvolve estratégias de growth marketing para empresas em Portugal e no Brasil que querem sair de um crescimento dependente de esforço manual para um crescimento alavancado por dados e automação. Trabalhamos ao longo de todo o funil, aquisição, activação, retenção, receita e referência, identificando os pontos de maior alavancagem para cada negócio.
 
 O nosso processo começa sempre pela análise de dados: tráfego, comportamento de utilizadores, taxas de conversão, cohorts de retenção e atribuição de canais. Com base nesse diagnóstico, definimos um backlog de experimentos prioritizados por impacto potencial e facilidade de implementação, testamos rapidamente e escalamos o que funciona.
 
@@ -223,7 +223,7 @@ Trabalhamos com equipas de marketing existentes ou como equipa externa dedicada,
   },
   {
     slug: 'automacao-de-processos',
-    metaTitle: 'Automação de Processos Empresariais | Oceano Web — Portugal & Brasil',
+    metaTitle: 'Automação de Processos Empresariais | Oceano Web, Portugal e Brasil',
     metaDescription:
       'Automatize fluxos de trabalho, reduza custos operacionais e elimine erros humanos com soluções de automação personalizadas. Especialistas em Portugal e Brasil.',
     badge: 'Automação de Processos',
@@ -232,7 +232,7 @@ Trabalhamos com equipas de marketing existentes ou como equipa externa dedicada,
 
 A Oceano Web implementa soluções de automação de processos para empresas em Portugal e no Brasil, cobrindo desde fluxos simples de notificação e transferência de dados entre sistemas, até pipelines complexos de processamento de documentos, aprovações multi-nível e integrações entre plataformas.
 
-Trabalhamos com as principais ferramentas de automação do mercado — Make (anteriormente Integromat), Zapier, n8n e automação via API directa — e desenvolvemos soluções customizadas quando as ferramentas existentes não chegam. A escolha da tecnologia é sempre subordinada ao problema: escolhemos o que melhor serve o negócio, não o que conhecemos melhor.
+Trabalhamos com as principais ferramentas de automação do mercado, como Make (anteriormente Integromat), Zapier, n8n e automação via API directa, e desenvolvemos soluções customizadas quando as ferramentas existentes não chegam. A escolha da tecnologia é sempre subordinada ao problema: escolhemos o que melhor serve o negócio, não o que conhecemos melhor.
 
 O impacto da automação é imediato e mensurável. Clientes que automatizaram processos de facturação e follow-up reduziram o tempo dedicado a essas tarefas em 80%. Empresas que automatizaram a transferência de dados entre CRM e ERP eliminaram erros de digitação e reduziram o tempo de processamento de horas para segundos.`,
     benefits: [
@@ -291,7 +291,7 @@ O impacto da automação é imediato e mensurável. Clientes que automatizaram p
   },
   {
     slug: 'analytics-bi',
-    metaTitle: 'Analytics e Business Intelligence | Oceano Web — Portugal & Brasil',
+    metaTitle: 'Analytics e Business Intelligence | Oceano Web, Portugal e Brasil',
     metaDescription:
       'Dashboards inteligentes, análise de dados e Business Intelligence para empresas que querem tomar decisões baseadas em dados. Especialistas em Portugal e Brasil.',
     badge: 'Analytics & BI',
@@ -302,7 +302,7 @@ A Oceano Web implementa soluções de Analytics e Business Intelligence para emp
 
 O nosso trabalho começa frequentemente por corrigir o que está mal: tracking incompleto, dados duplicados, métricas calculadas de formas inconsistentes entre departamentos. Só com uma base de dados fiável é possível construir relatórios em que a gestão confie e com os quais tome decisões.
 
-A partir daí, construímos dashboards em ferramentas como Looker Studio, Power BI ou Tableau, ligados directamente às fontes de dados — Google Analytics 4, bases de dados SQL, CRMs, plataformas de publicidade — e actualizados automaticamente. O resultado é visibilidade completa do negócio sem necessidade de exportar ficheiros Excel ou aguardar por relatórios manuais.`,
+A partir daí, construímos dashboards em ferramentas como Looker Studio, Power BI ou Tableau, ligados directamente às fontes de dados, Google Analytics 4, bases de dados SQL, CRMs, plataformas de publicidade, e actualizados automaticamente. O resultado é visibilidade completa do negócio sem necessidade de exportar ficheiros Excel ou aguardar por relatórios manuais.`,
     benefits: [
       {
         title: 'Dashboards executivos',
@@ -341,7 +341,7 @@ A partir daí, construímos dashboards em ferramentas como Looker Studio, Power 
       {
         question: 'Os dashboards actualizam automaticamente?',
         answer:
-          'Sim. Todos os dashboards que construímos são ligados directamente às fontes de dados e actualizam automaticamente — em tempo real ou com frequência definida (horária, diária, etc.).',
+          'Sim. Todos os dashboards que construímos são ligados directamente às fontes de dados e actualizam automaticamente, em tempo real ou com frequência definida (horária, diária, etc.).',
       },
       {
         question: 'Conseguem corrigir o nosso GA4 que está mal configurado?',
@@ -359,7 +359,7 @@ A partir daí, construímos dashboards em ferramentas como Looker Studio, Power 
   },
   {
     slug: 'transformacao-digital',
-    metaTitle: 'Transformação Digital para Empresas | Oceano Web — Portugal & Brasil',
+    metaTitle: 'Transformação Digital para Empresas | Oceano Web, Portugal e Brasil',
     metaDescription:
       'Consultoria e implementação de transformação digital para empresas que querem modernizar operações, digitalizar processos e escalar com tecnologia. Portugal & Brasil.',
     badge: 'Transformação Digital',
@@ -368,7 +368,7 @@ A partir daí, construímos dashboards em ferramentas como Looker Studio, Power 
 
 A Oceano Web oferece consultoria e implementação de transformação digital para empresas em Portugal e no Brasil que querem modernizar os seus processos, digitalizar operações e construir a infraestrutura tecnológica necessária para crescer de forma sustentável.
 
-O nosso trabalho começa por perceber onde a empresa está hoje: que sistemas utiliza, como os dados fluem (ou não fluem) entre departamentos, onde estão os maiores pontos de atrito operacional e qual é a maturidade digital da equipa. Com base nesse diagnóstico, construímos um roadmap de transformação por fases — pragmático, priorizado por impacto e dimensionado à realidade da empresa.
+O nosso trabalho começa por perceber onde a empresa está hoje: que sistemas utiliza, como os dados fluem (ou não fluem) entre departamentos, onde estão os maiores pontos de atrito operacional e qual é a maturidade digital da equipa. Com base nesse diagnóstico, construímos um roadmap de transformação por fases, pragmático, priorizado por impacto e dimensionado à realidade da empresa.
 
 Não impingimos tecnologia pela tecnologia. Cada iniciativa de transformação tem de responder a um problema real de negócio e gerar retorno mensurável. É com esta abordagem que conseguimos que a transformação digital deixe de ser um conceito abstracto e passe a ser um motor tangível de crescimento.`,
     benefits: [
@@ -419,7 +419,7 @@ Não impingimos tecnologia pela tecnologia. Cada iniciativa de transformação t
       {
         question: 'Trabalham com PMEs ou apenas grandes empresas?',
         answer:
-          'Trabalhamos com ambas. A transformação digital não é exclusiva de grandes organizações — muitas vezes PMEs ganham mais agilidade por terem menos camadas de burocracia. Adaptamos o âmbito e o investimento à realidade de cada empresa.',
+          'Trabalhamos com ambas. A transformação digital não é exclusiva de grandes organizações. Muitas vezes PMEs ganham mais agilidade por terem menos camadas de burocracia. Adaptamos o âmbito e o investimento à realidade de cada empresa.',
       },
     ],
     schemaDescription:

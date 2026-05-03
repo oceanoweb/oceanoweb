@@ -103,8 +103,8 @@ export default function TermosPage() {
               4. Propriedade intelectual
             </h2>
             <p>
-              Todo o conteúdo presente neste website — incluindo, sem limitação, textos, imagens,
-              logótipos, ícones, designs, código-fonte e estrutura — é propriedade exclusiva da
+              Todo o conteúdo presente neste website, incluindo sem limitação textos, imagens,
+              logótipos, ícones, designs, código-fonte e estrutura, é propriedade exclusiva da
               Oceano Web ou dos seus licenciantes, e está protegido pela legislação aplicável em
               matéria de direitos de autor e propriedade intelectual.
             </p>

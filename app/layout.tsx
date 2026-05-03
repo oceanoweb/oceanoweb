@@ -60,7 +60,7 @@ export const metadata: Metadata = {
         secureUrl: OG_IMAGE,
         width: 1200,
         height: 630,
-        alt: 'Oceano Web — Agência de Transformação Digital',
+        alt: 'Oceano Web, Agência de Transformação Digital',
       },
     ],
   },
@@ -141,7 +141,7 @@ export default function RootLayout({
           name: 'Trabalham com empresas de que dimensão?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Trabalhamos com PMEs e grandes empresas em Portugal e no Brasil. Não existe um tamanho mínimo — o que importa é que a empresa queira crescer, automatizar ou digitalizar processos de forma estratégica.',
+            text: 'Trabalhamos com PMEs e grandes empresas em Portugal e no Brasil. Não existe um tamanho mínimo. O que importa é que a empresa queira crescer, automatizar ou digitalizar processos de forma estratégica.',
           },
         },
         {

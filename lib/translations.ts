@@ -172,7 +172,7 @@ export const translations = {
         {
           question: 'Trabalham com empresas de que dimensão?',
           answer:
-            'Trabalhamos com PMEs e grandes empresas em Portugal e no Brasil. Não existe um tamanho mínimo — o que importa é que a empresa queira crescer, automatizar ou digitalizar processos de forma estratégica.',
+            'Trabalhamos com PMEs e grandes empresas em Portugal e no Brasil. Não existe um tamanho mínimo. O que importa é que a empresa queira crescer, automatizar ou digitalizar processos de forma estratégica.',
         },
         {
           question: 'Operam em Portugal e no Brasil?',
@@ -419,7 +419,7 @@ export const translations = {
         {
           question: 'What size companies do you work with?',
           answer:
-            'We work with SMEs and large companies in Portugal and Brazil. There is no minimum size — what matters is that the company wants to grow, automate or digitise processes strategically.',
+            'We work with SMEs and large companies in Portugal and Brazil. There is no minimum size. What matters is that the company wants to grow, automate or digitise processes strategically.',
         },
         {
           question: 'Do you operate in Portugal and Brazil?',

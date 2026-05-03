@@ -28,7 +28,7 @@ export const blogPosts: BlogPost[] = [
     content: [
       {
         type: 'p',
-        text: 'Poucas expressões são usadas com tanta frequência e compreendidas com tanta imprecisão como "transformação digital". Para algumas empresas significa ter um site. Para outras, adoptar um software de gestão. Na prática, a transformação digital é algo muito mais abrangente — e muito mais estratégico.',
+        text: 'Poucas expressões são usadas com tanta frequência e compreendidas com tanta imprecisão como "transformação digital". Para algumas empresas significa ter um site. Para outras, adoptar um software de gestão. Na prática, a transformação digital é algo muito mais abrangente, e muito mais estratégico.',
       },
       {
         type: 'h2',
@@ -36,7 +36,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'Transformação digital é o processo pelo qual uma empresa integra tecnologia em todas as suas áreas de operação, alterando fundamentalmente a forma como funciona e como cria valor para os seus clientes. Não é um projecto com início e fim — é uma mudança contínua de cultura, processos e modelos de negócio.',
+        text: 'Transformação digital é o processo pelo qual uma empresa integra tecnologia em todas as suas áreas de operação, alterando fundamentalmente a forma como funciona e como cria valor para os seus clientes. Não é um projecto com início e fim. É uma mudança contínua de cultura, processos e modelos de negócio.',
       },
       {
         type: 'p',
@@ -65,7 +65,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'callout',
-        text: 'A tecnologia resolve problemas. Se não houver clareza sobre quais são os problemas, a tecnologia apenas os automatiza — e frequentemente amplifica.',
+        text: 'A tecnologia resolve problemas. Se não houver clareza sobre quais são os problemas, a tecnologia apenas os automatiza, e frequentemente amplifica.',
       },
       {
         type: 'h2',
@@ -76,7 +76,7 @@ export const blogPosts: BlogPost[] = [
         items: [
           'Diagnóstico de maturidade digital: avalie onde a sua empresa está hoje em relação à concorrência e ao potencial de digitalização de cada área.',
           'Identificação de quick wins: mapeie os processos manuais e repetitivos com maior impacto operacional e comece por aí.',
-          'Definição de KPIs: estabeleça métricas claras antes de qualquer implementação. Sem métricas, não há transformação — há apenas mudança.',
+          'Definição de KPIs: estabeleça métricas claras antes de qualquer implementação. Sem métricas, não há transformação. Há apenas mudança.',
           'Envolvimento da liderança: a transformação digital tem de ser liderada de cima. Sem comprometimento da gestão, os projectos ficam sem recursos e sem prioridade.',
           'Iteração contínua: comece pequeno, valide, aprenda e escale o que funciona. Grandes implementações de raiz têm taxas de insucesso muito superiores.',
         ],
@@ -118,7 +118,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'Estas são precisamente as áreas onde a IA tem maior impacto imediato — não porque substitua pessoas, mas porque liberta as pessoas de tarefas que não requerem julgamento humano.',
+        text: 'Estas são precisamente as áreas onde a IA tem maior impacto imediato, não porque substitua pessoas, mas porque liberta as pessoas de tarefas que não requerem julgamento humano.',
       },
       {
         type: 'h2',
@@ -178,7 +178,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'A questão já não é se a sua empresa pode pagar IA — é se pode pagar não tê-la enquanto a concorrência avança.',
+        text: 'A questão já não é se a sua empresa pode pagar IA. É se pode pagar não tê-la enquanto a concorrência avança.',
       },
     ],
   },
@@ -193,7 +193,7 @@ export const blogPosts: BlogPost[] = [
     content: [
       {
         type: 'p',
-        text: 'O mercado de agências digitais em Portugal cresceu significativamente na última década. Hoje existem centenas de empresas a oferecer serviços de marketing digital, desenvolvimento web, SEO e redes sociais — com propostas de valor e níveis de qualidade muito diferentes. Para uma empresa que quer crescer digitalmente, escolher o parceiro errado não é apenas caro: pode atrasar o crescimento em anos.',
+        text: 'O mercado de agências digitais em Portugal cresceu significativamente na última década. Hoje existem centenas de empresas a oferecer serviços de marketing digital, desenvolvimento web, SEO e redes sociais, com propostas de valor e níveis de qualidade muito diferentes. Para uma empresa que quer crescer digitalmente, escolher o parceiro errado não é apenas caro: pode atrasar o crescimento em anos.',
       },
       {
         type: 'h2',
@@ -206,7 +206,7 @@ export const blogPosts: BlogPost[] = [
           'Não verificar casos de estudo reais e resultados documentados.',
           'Contratar uma agência generalista para um problema que requer especialização.',
           'Não definir KPIs e métricas de sucesso antes de assinar contrato.',
-          'Ignorar a cultura e forma de trabalho da agência — a compatibilidade operacional importa.',
+          'Ignorar a cultura e forma de trabalho da agência, pois a compatibilidade operacional importa.',
         ],
       },
       {
@@ -219,7 +219,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'Uma agência que faz tudo tende a fazer tudo de forma mediana. Se o seu objectivo principal é SEO, procure uma agência com casos documentados em SEO. Se é transformação digital com IA, certifique-se que existe experiência técnica real — não apenas capacidade de subcontratar.',
+        text: 'Uma agência que faz tudo tende a fazer tudo de forma mediana. Se o seu objectivo principal é SEO, procure uma agência com casos documentados em SEO. Se é transformação digital com IA, certifique-se que existe experiência técnica real, não apenas capacidade de subcontratar.',
       },
       {
         type: 'h3',
@@ -270,7 +270,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'Com a normalização do trabalho remoto, a localização da agência perdeu importância para a maioria dos projectos. Uma agência em Lisboa pode trabalhar eficazmente com uma empresa no Porto, em São Paulo ou no Rio de Janeiro. O que importa é o processo de comunicação, a disponibilidade e a compatibilidade de fusos horários — não a proximidade geográfica.',
+        text: 'Com a normalização do trabalho remoto, a localização da agência perdeu importância para a maioria dos projectos. Uma agência em Lisboa pode trabalhar eficazmente com uma empresa no Porto, em São Paulo ou no Rio de Janeiro. O que importa é o processo de comunicação, a disponibilidade e a compatibilidade de fusos horários, não a proximidade geográfica.',
       },
       {
         type: 'h2',
@@ -278,7 +278,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'Uma boa agência digital deve conseguir entregar valor mensurável nos primeiros 90 dias. Não resultados finais — mas indicadores claros de progresso: diagnóstico completo, plano de acção definido, primeiras implementações em curso e dados iniciais de performance. Se ao fim de 3 meses não consegue ver o que está a acontecer, algo está errado.',
+        text: 'Uma boa agência digital deve conseguir entregar valor mensurável nos primeiros 90 dias. Não resultados finais, mas indicadores claros de progresso: diagnóstico completo, plano de acção definido, primeiras implementações em curso e dados iniciais de performance. Se ao fim de 3 meses não consegue ver o que está a acontecer, algo está errado.',
       },
     ],
   },
@@ -297,7 +297,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'h2',
-        text: 'Caso 1 — Empresa de logística: automatização de tracking e comunicação',
+        text: 'Caso 1. Empresa de logística: automatização de tracking e comunicação',
       },
       {
         type: 'h3',
@@ -330,7 +330,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'h2',
-        text: 'Caso 2 — Empresa de serviços financeiros: processamento de propostas',
+        text: 'Caso 2. Empresa de serviços financeiros: processamento de propostas',
       },
       {
         type: 'h3',
@@ -363,7 +363,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'h2',
-        text: 'Caso 3 — Retailer online: sincronização de inventário multi-canal',
+        text: 'Caso 3. Retailer online: sincronização de inventário multi-canal',
       },
       {
         type: 'h3',
@@ -392,7 +392,7 @@ export const blogPosts: BlogPost[] = [
       {
         type: 'ul',
         items: [
-          'Nenhum deles exigiu substituir os sistemas existentes — as automações integraram-se com o que já existia.',
+          'Nenhum deles exigiu substituir os sistemas existentes. As automações integraram-se com o que já existia.',
           'Todos tinham um problema de negócio claro antes de qualquer discussão tecnológica.',
           'O ROI foi definido e medido desde o início, com métricas acordadas antes da implementação.',
           'Os projectos foram concluídos em 6 a 12 semanas.',
@@ -467,11 +467,11 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'O ponto de partida não é a tecnologia — é o problema. Identifique uma decisão que a sua empresa toma repetidamente (previsão de stock, priorização de leads, detecção de risco) e que actualmente é feita com base em intuição ou métodos manuais. Esse é o candidato ideal para um primeiro projecto de ML.',
+        text: 'O ponto de partida não é a tecnologia. É o problema. Identifique uma decisão que a sua empresa toma repetidamente (previsão de stock, priorização de leads, detecção de risco) e que actualmente é feita com base em intuição ou métodos manuais. Esse é o candidato ideal para um primeiro projecto de ML.',
       },
       {
         type: 'p',
-        text: 'Um parceiro técnico experiente consegue avaliar a viabilidade em poucas horas de diagnóstico, analisando os dados disponíveis, a qualidade dos mesmos e o potencial de impacto. Na maioria dos casos, o maior trabalho não é o modelo — é garantir que os dados estão estruturados e acessíveis.',
+        text: 'Um parceiro técnico experiente consegue avaliar a viabilidade em poucas horas de diagnóstico, analisando os dados disponíveis, a qualidade dos mesmos e o potencial de impacto. Na maioria dos casos, o maior trabalho não é o modelo. É garantir que os dados estão estruturados e acessíveis.',
       },
       {
         type: 'ul',

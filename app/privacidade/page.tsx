@@ -137,19 +137,19 @@ export default function PrivacidadePage() {
             </p>
             <ul className="list-disc list-inside space-y-3 pl-2">
               <li>
-                <strong className="text-foreground">Resend</strong> — plataforma de envio de email
+                <strong className="text-foreground">Resend</strong>, plataforma de envio de email
                 para processamento das mensagens do formulário de contacto.
               </li>
               <li>
-                <strong className="text-foreground">Google Analytics (Google LLC)</strong> — análise
+                <strong className="text-foreground">Google Analytics (Google LLC)</strong>, análise
                 de tráfego e comportamento no website.
               </li>
               <li>
-                <strong className="text-foreground">Meta Platforms, Inc.</strong> — publicidade
+                <strong className="text-foreground">Meta Platforms, Inc.</strong>, publicidade
                 personalizada (apenas com consentimento).
               </li>
               <li>
-                <strong className="text-foreground">Vercel, Inc.</strong> — alojamento do website.
+                <strong className="text-foreground">Vercel, Inc.</strong>, alojamento do website.
               </li>
             </ul>
             <p className="mt-4">

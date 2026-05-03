@@ -5,7 +5,7 @@ import { blogPosts, formatDate } from '@/lib/blog-data'
 import { SITE_URL } from '@/lib/site-config'
 
 export const metadata: Metadata = {
-  title: 'Blog | Oceano Web — Transformação Digital, IA e Marketing',
+  title: 'Blog | Oceano Web, Transformação Digital, IA e Marketing',
   description:
     'Artigos sobre transformação digital, inteligência artificial, machine learning e marketing digital. Conteúdo prático para empresas em Portugal e no Brasil.',
   alternates: {
