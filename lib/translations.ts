@@ -112,25 +112,25 @@ export const translations = {
           quote:
             'A Oceano Web revolucionou nossa presença digital. O novo site moderno e intuitivo atraiu um público totalmente novo, e a implementação de IA nos processos de atendimento reduziu nosso tempo de resposta em 70%, aumentando drasticamente a satisfação dos clientes.',
           author: 'Edlene Lorenzzato',
-          role: 'Lorenzzato Motor',
+          role: 'CEO, Lorenzzato Motor',
         },
         {
           quote:
             'Nosso novo site desenvolvido pela Oceano Web elevou completamente a presença digital do Grupo Nortearh. O design profissional e a experiência de navegação impecável aumentaram nossos leads qualificados em 85% nos primeiros 3 meses.',
           author: 'Carlos Nortearh',
-          role: 'Grupo Nortearh',
+          role: 'CEO, Grupo Nortearh',
         },
         {
           quote:
             'A plataforma de ecommerce que a Oceano Web criou para a Mobiliadora Bicalho superou todas as expectativas. Em 6 meses, as vendas online já representam 40% do nosso faturamento. A integração perfeita entre site e loja virtual fez toda a diferença.',
           author: 'Patricia Bicalho',
-          role: 'Mobiliadora Bicalho',
+          role: 'Directora, Mobiliadora Bicalho',
         },
         {
           quote:
             'A plataforma customizada que a Oceano Web desenvolveu para a Concur revolucionou nossa forma de gerenciar conteúdo. Site profissional, sistema completo de publicação de vídeos, transmissões ao vivo e um dashboard intuitivo que centralizou toda nossa operação. Aumentamos o engajamento em 200%.',
           author: 'Rodrigo Fernandes',
-          role: 'Concur',
+          role: 'CTO, Concur',
         },
       ],
     },
@@ -279,25 +279,25 @@ export const translations = {
           quote:
             'Oceano Web revolutionized our digital presence. The modern and intuitive new website attracted a completely new audience, and the AI implementation in customer service processes reduced our response time by 70%, drastically increasing customer satisfaction.',
           author: 'Edlene Lorenzzato',
-          role: 'Lorenzzato Motor',
+          role: 'CEO, Lorenzzato Motor',
         },
         {
           quote:
             "Our new website developed by Oceano Web completely elevated Grupo Nortearh's digital presence. The professional design and impeccable navigation experience increased our qualified leads by 85% in the first 3 months.",
           author: 'Carlos Nortearh',
-          role: 'Grupo Nortearh',
+          role: 'CEO, Grupo Nortearh',
         },
         {
           quote:
             'The ecommerce platform that Oceano Web created for Mobiliadora Bicalho exceeded all expectations. In 6 months, online sales already represent 40% of our revenue. The seamless integration between website and online store made all the difference.',
           author: 'Patricia Bicalho',
-          role: 'Mobiliadora Bicalho',
+          role: 'Director, Mobiliadora Bicalho',
         },
         {
           quote:
             'The custom platform that Oceano Web developed for Concur revolutionized how we manage content. Professional website, complete video publishing system, live streaming, and an intuitive dashboard that centralized our entire operation. We increased engagement by 200%.',
           author: 'Rodrigo Fernandes',
-          role: 'Concur',
+          role: 'CTO, Concur',
         },
       ],
     },
