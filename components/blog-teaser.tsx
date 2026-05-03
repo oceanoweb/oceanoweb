@@ -5,7 +5,7 @@ import { ArrowRight, Clock } from 'lucide-react'
 import { blogPosts, formatDate } from '@/lib/blog-data'
 import { useLanguage } from '@/lib/language-context'
 
-const RECENT_POSTS = blogPosts.slice(0, 3)
+const RECENT_POSTS = blogPosts.slice(-3).reverse()
 
 export function BlogTeaser() {
   const { t } = useLanguage()

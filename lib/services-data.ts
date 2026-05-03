@@ -302,12 +302,12 @@ A Oceano Web implementa soluções de Analytics e Business Intelligence para emp
 
 O nosso trabalho começa frequentemente por corrigir o que está mal: tracking incompleto, dados duplicados, métricas calculadas de formas inconsistentes entre departamentos. Só com uma base de dados fiável é possível construir relatórios em que a gestão confie e com os quais tome decisões.
 
-A partir daí, construímos dashboards em ferramentas como Looker Studio, Power BI ou Tableau, ligados directamente às fontes de dados, Google Analytics 4, bases de dados SQL, CRMs, plataformas de publicidade, e actualizados automaticamente. O resultado é visibilidade completa do negócio sem necessidade de exportar ficheiros Excel ou aguardar por relatórios manuais.`,
+A partir daí, construímos dashboards em ferramentas como Looker Studio, Power BI ou Tableau, ligados directamente às fontes de dados, Google Analytics 4, bases de dados SQL, CRMs, plataformas de publicidade, e atualizados automaticamente. O resultado é visibilidade completa do negócio sem necessidade de exportar ficheiros Excel ou aguardar por relatórios manuais.`,
     benefits: [
       {
         title: 'Dashboards executivos',
         description:
-          'Painéis com os KPIs mais relevantes para a gestão, actualizados em tempo real e acessíveis em qualquer dispositivo.',
+          'Painéis com os KPIs mais relevantes para a gestão, atualizados em tempo real e acessíveis em qualquer dispositivo.',
       },
       {
         title: 'Tracking e instrumentalização',

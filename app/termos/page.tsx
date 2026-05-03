@@ -37,12 +37,9 @@ export default function TermosPage() {
 
       <main className="mx-auto max-w-4xl px-6 py-16 md:py-24">
         <h1 className="font-heading text-4xl font-bold text-foreground">Termos de Serviço</h1>
-        <p className="mt-3 text-sm text-muted-foreground">
-          Última actualização: Maio de 2026
-        </p>
+        <p className="mt-3 text-sm text-muted-foreground">Última actualização: Maio de 2026</p>
 
         <div className="mt-12 space-y-12 text-base leading-relaxed text-muted-foreground">
-
           <section>
             <h2 className="font-heading text-xl font-semibold text-foreground mb-4">
               1. Aceitação dos termos
@@ -51,9 +48,8 @@ export default function TermosPage() {
               Ao aceder e utilizar o website{' '}
               <strong className="text-foreground">oceanoweb.com</strong> e os serviços da{' '}
               <strong className="text-foreground">Oceano Web</strong>, o utilizador aceita ficar
-              vinculado pelos presentes Termos de Serviço. Se não concordar com alguma das
-              condições aqui estabelecidas, deverá abster-se de utilizar o website e os nossos
-              serviços.
+              vinculado pelos presentes Termos de Serviço. Se não concordar com alguma das condições
+              aqui estabelecidas, deverá abster-se de utilizar o website e os nossos serviços.
             </p>
           </section>
 
@@ -120,7 +116,7 @@ export default function TermosPage() {
               5. Limitação de responsabilidade
             </h2>
             <p className="mb-4">
-              A Oceano Web envidarão todos os esforços para manter o website disponível e actualizado,
+              A Oceano Web envidará todos os esforços para manter o website disponível e atualizado,
               mas não garante a sua disponibilidade contínua, exactidão ou adequação a fins
               específicos.
             </p>
@@ -139,8 +135,8 @@ export default function TermosPage() {
             <p>
               Este website pode conter ligações para websites de terceiros. Essas ligações são
               fornecidas apenas para conveniência do utilizador. A Oceano Web não tem controlo sobre
-              o conteúdo de websites externos e não assume qualquer responsabilidade pelos mesmos
-              ou pelas suas práticas de privacidade.
+              o conteúdo de websites externos e não assume qualquer responsabilidade pelos mesmos ou
+              pelas suas práticas de privacidade.
             </p>
           </section>
 
@@ -168,9 +164,7 @@ export default function TermosPage() {
           </section>
 
           <section>
-            <h2 className="font-heading text-xl font-semibold text-foreground mb-4">
-              9. Contacto
-            </h2>
+            <h2 className="font-heading text-xl font-semibold text-foreground mb-4">9. Contacto</h2>
             <p>
               Para questões relacionadas com estes Termos de Serviço, contacte-nos através de{' '}
               <a href={`mailto:${CONTACT_EMAIL}`} className="text-primary hover:underline">
@@ -179,7 +173,6 @@ export default function TermosPage() {
               .
             </p>
           </section>
-
         </div>
       </main>
 

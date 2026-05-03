@@ -37,25 +37,19 @@ export default function PrivacidadePage() {
 
       <main className="mx-auto max-w-4xl px-6 py-16 md:py-24">
         <h1 className="font-heading text-4xl font-bold text-foreground">Política de Privacidade</h1>
-        <p className="mt-3 text-sm text-muted-foreground">
-          Última actualização: Maio de 2026
-        </p>
+        <p className="mt-3 text-sm text-muted-foreground">Última actualização: Maio de 2026</p>
 
         <div className="mt-12 space-y-12 text-base leading-relaxed text-muted-foreground">
-
           <section>
             <h2 className="font-heading text-xl font-semibold text-foreground mb-4">
               1. Responsável pelo tratamento
             </h2>
             <p>
-              A <strong className="text-foreground">Oceano Web</strong> é a entidade responsável pelo
-              tratamento dos dados pessoais recolhidos através deste website. Para questões
+              A <strong className="text-foreground">Oceano Web</strong> é a entidade responsável
+              pelo tratamento dos dados pessoais recolhidos através deste website. Para questões
               relacionadas com privacidade e protecção de dados, pode contactar-nos através do
               endereço:{' '}
-              <a
-                href={`mailto:${CONTACT_EMAIL}`}
-                className="text-primary hover:underline"
-              >
+              <a href={`mailto:${CONTACT_EMAIL}`} className="text-primary hover:underline">
                 {CONTACT_EMAIL}
               </a>
               .
@@ -77,7 +71,9 @@ export default function PrivacidadePage() {
                 contacto e estabelecer comunicação comercial.
               </li>
               <li>
-                <strong className="text-foreground">Cookies analíticos (Google Analytics 4):</strong>{' '}
+                <strong className="text-foreground">
+                  Cookies analíticos (Google Analytics 4):
+                </strong>{' '}
                 dados de navegação anónimos e agregados, como páginas visitadas, tempo na página e
                 origem do tráfego. Finalidade: análise do desempenho do website e melhoria da
                 experiência do utilizador.
@@ -96,9 +92,9 @@ export default function PrivacidadePage() {
                 RGPD).
               </li>
               <li>
-                <strong className="text-foreground">Cookies analíticos:</strong>{' '}
-                consentimento do titular (art.º 6.º, n.º 1, alínea a) do RGPD). Pode revogar o
-                consentimento a qualquer momento através das preferências de cookies.
+                <strong className="text-foreground">Cookies analíticos:</strong> consentimento do
+                titular (art.º 6.º, n.º 1, alínea a) do RGPD). Pode revogar o consentimento a
+                qualquer momento através das preferências de cookies.
               </li>
             </ul>
           </section>
@@ -169,8 +165,9 @@ export default function PrivacidadePage() {
               </li>
             </ul>
             <p className="mt-4">
-              Pode alterar as suas preferências de cookies a qualquer momento através do botão de
-              preferências disponível no rodapé do website.
+              Pode gerir as suas preferências de cookies através do aviso de cookies apresentado
+              pelo website e, adicionalmente, controlar ou remover cookies nas definições do seu
+              navegador.
             </p>
           </section>
 
@@ -178,9 +175,7 @@ export default function PrivacidadePage() {
             <h2 className="font-heading text-xl font-semibold text-foreground mb-4">
               7. Os seus direitos
             </h2>
-            <p className="mb-4">
-              Nos termos do RGPD, tem direito a:
-            </p>
+            <p className="mb-4">Nos termos do RGPD, tem direito a:</p>
             <ul className="list-disc list-inside space-y-3 pl-2">
               <li>
                 <strong className="text-foreground">Acesso:</strong> solicitar confirmação de que os
@@ -267,7 +262,6 @@ export default function PrivacidadePage() {
               .
             </p>
           </section>
-
         </div>
       </main>
 
