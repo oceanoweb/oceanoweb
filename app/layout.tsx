@@ -1,4 +1,3 @@
-import React from 'react'
 import type { Metadata } from 'next'
 import { Inter, Space_Grotesk } from 'next/font/google'
 import {
@@ -10,8 +9,9 @@ import {
   SITE_URL,
   PHONE_NUMBER_DISPLAY,
 } from '@/lib/site-config'
-import { CookieConsent } from '@/components/cookie-consent'
+import { LeadMagnetProvider } from '@/components/lead-magnet-provider'
 import { LanguageProvider } from '@/lib/language-context'
+import { ClientLayout } from '@/components/client-layout'
 
 import './globals.css'
 
@@ -142,8 +142,9 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
         <LanguageProvider>
-          {children}
-          <CookieConsent />
+          <LeadMagnetProvider>
+            <ClientLayout>{children}</ClientLayout>
+          </LeadMagnetProvider>
         </LanguageProvider>
       </body>
     </html>
