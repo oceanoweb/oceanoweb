@@ -7,6 +7,7 @@ import { Services } from '@/components/services'
 import { Process } from '@/components/process'
 import { About } from '@/components/about'
 import { Metrics } from '@/components/metrics'
+import { LeadMagnetSection } from '@/components/lead-magnet-section'
 import { Testimonials } from '@/components/testimonials'
 import { BlogTeaser } from '@/components/blog-teaser'
 import { Faq } from '@/components/faq'
@@ -28,6 +29,7 @@ export function HomePage() {
         <Process />
         <About />
         <Metrics />
+        <LeadMagnetSection />
         <Testimonials />
         <BlogTeaser />
         <Faq />

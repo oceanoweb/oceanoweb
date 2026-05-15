@@ -5,6 +5,7 @@ import { ArrowLeft, ArrowRight, Clock, Calendar } from 'lucide-react'
 import { formatDate, type BlogPost, type ContentBlock } from '@/lib/blog-data'
 import { WHATSAPP_LINK } from '@/lib/site-config'
 import { useLanguage } from '@/lib/language-context'
+import { useLeadMagnet } from '@/components/lead-magnet-provider'
 
 function renderBlock(block: ContentBlock, index: number) {
   switch (block.type) {
@@ -62,11 +63,27 @@ function renderBlock(block: ContentBlock, index: number) {
 }
 
 interface BlogPostContentProps {
-  post: BlogPost
+  readonly post: BlogPost
+}
+
+function BlogLeadMagnetBanner({ onOpen, text, cta }: { readonly onOpen: () => void; readonly text: string; readonly cta: string }) {
+  return (
+    <div className="my-8 rounded-xl border border-primary/20 bg-background px-6 py-6">
+      <p className="text-sm font-medium text-foreground">{text}</p>
+      <button
+        onClick={onOpen}
+        className="mt-3 inline-flex items-center rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition hover:bg-primary/90"
+      >
+        {cta}
+      </button>
+    </div>
+  )
 }
 
 export function BlogPostContent({ post }: BlogPostContentProps) {
   const { t } = useLanguage()
+  const { openModal } = useLeadMagnet()
+  const lm = t.leadMagnet
 
   return (
     <main>
@@ -105,7 +122,26 @@ export function BlogPostContent({ post }: BlogPostContentProps) {
       {/* Article body */}
       <section className="py-16">
         <div className="mx-auto max-w-3xl px-6">
-          <div className="prose-custom">{post.content.map((block, i) => renderBlock(block, i))}</div>
+          <div className="prose-custom">
+            {(() => {
+              let pCount = 0
+              return post.content.map((block, i) => {
+                const el = renderBlock(block, i)
+                if (block.type === 'p') {
+                  pCount++
+                  if (pCount === 2) {
+                    return (
+                      <>
+                        {el}
+                        <BlogLeadMagnetBanner key="lm-banner" onOpen={openModal} text={lm.blogText} cta={lm.blogCta} />
+                      </>
+                    )
+                  }
+                }
+                return el
+              })
+            })()}
+          </div>
         </div>
       </section>
 

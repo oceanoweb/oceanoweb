@@ -10,6 +10,7 @@
 
 @layer base {
   :root {
+    --banner-h: 0px;
     --background: 220 20% 6%;
     --foreground: 210 20% 95%;
     --card: 220 18% 10%;

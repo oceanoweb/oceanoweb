@@ -296,6 +296,45 @@ export const translations = {
         whatsapp: 'Conversar no WhatsApp',
       },
     },
+    leadMagnet: {
+      badge: 'Guia gratuito',
+      title: 'Pare de fazer manual o que a IA já faz por você',
+      modalDescription:
+        'Baixe grátis 10 processos que pode automatizar essa semana. Sem equipe técnica e sem grande investimento.',
+      sectionDescription:
+        'Baixe grátis o guia com 10 automações práticas. Sem equipe técnica e sem grande investimento.',
+      emailPlaceholder: 'O seu melhor email',
+      cta: 'Quero o guia gratuito →',
+      noThanks: 'Não, obrigado',
+      sending: 'Enviando...',
+      closeModal: 'Fechar',
+      closeBanner: 'Fechar banner',
+      errorInvalidEmail: 'Por favor, insira um email válido.',
+      errorServer: 'Não foi possível registar o email. Tente novamente.',
+      bannerText: 'Baixe grátis: 10 processos para automatizar essa semana',
+      bannerCta: 'Baixar agora →',
+      serviceDescription:
+        'Baixe o guia gratuito e descubra o que já pode automatizar no seu negócio.',
+      serviceCta: 'Baixar o guia gratuito →',
+      blogText: 'Lendo sobre automação? Baixe o guia com 10 processos prontos para implementar.',
+      blogCta: 'Baixar grátis →',
+      guia: {
+        subtitle:
+          '10 processos práticos que qualquer empresa pode automatizar essa semana. Sem equipe técnica e sem grande investimento.',
+        benefits: [
+          '10 automações prontas para implementar',
+          'Ferramentas gratuitas ou de baixo custo',
+          'Sem precisar de equipe técnica',
+        ],
+        socialProof: 'Empresas em Portugal e Brasil já baixaram o guia.',
+      },
+      obrigado: {
+        title: 'O guia foi enviado para o seu email',
+        subtitle:
+          'Verifique a caixa de entrada. Pode levar até 2 minutos. Se não encontrar, cheque a pasta de spam.',
+        back: 'Voltar ao site →',
+      },
+    },
   },
   en: {
     nav: {
@@ -590,6 +629,45 @@ export const translations = {
           'Talk to a specialist and find out how we can help your company. Response within 24 hours.',
         ctaButton: 'Talk to a Specialist',
         whatsapp: 'Chat on WhatsApp',
+      },
+    },
+    leadMagnet: {
+      badge: 'Free guide',
+      title: 'Stop doing manually what AI already does for you',
+      modalDescription:
+        'Download free: 10 processes you can automate this week. No tech team and no big spend.',
+      sectionDescription:
+        'Download the free guide with 10 practical automations. No tech team and no big spend.',
+      emailPlaceholder: 'Your best email',
+      cta: 'I want the free guide →',
+      noThanks: 'No, thanks',
+      sending: 'Sending...',
+      closeModal: 'Close',
+      closeBanner: 'Close banner',
+      errorInvalidEmail: 'Please enter a valid email.',
+      errorServer: 'Could not register your email. Please try again.',
+      bannerText: 'Download free: 10 processes to automate this week',
+      bannerCta: 'Download now →',
+      serviceDescription:
+        'Download the free guide and see what you can already automate in your business.',
+      serviceCta: 'Download the free guide →',
+      blogText: 'Reading about automation? Download the guide with 10 ready-to-implement processes.',
+      blogCta: 'Download free →',
+      guia: {
+        subtitle:
+          '10 practical processes any company can automate this week. No tech team and no big spend.',
+        benefits: [
+          '10 ready-to-implement automations',
+          'Free or low-cost tools',
+          'No tech team required',
+        ],
+        socialProof: 'Companies in Portugal and Brazil have already downloaded the guide.',
+      },
+      obrigado: {
+        title: 'The guide was sent to your email',
+        subtitle:
+          'Check your inbox. It may take up to 2 minutes. If you do not find it, check your spam folder.',
+        back: 'Back to site →',
       },
     },
   },

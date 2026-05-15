@@ -8,18 +8,15 @@ type ConsentState = 'accepted' | 'rejected' | null
 
 const STORAGE_KEY = 'cookie-consent'
 
-export function CookieConsent() {
-  const [consent, setConsent] = useState<ConsentState>(null)
-  const [showBanner, setShowBanner] = useState(false)
-  const [ready, setReady] = useState(false)
-  const gaId = process.env.NEXT_PUBLIC_GA_ID
+function readStorage(): ConsentState {
+  if (typeof localStorage === 'undefined') return null
+  return localStorage.getItem(STORAGE_KEY) as ConsentState | null
+}
 
-  useEffect(() => {
-    const stored = localStorage.getItem(STORAGE_KEY) as ConsentState | null
-    setConsent(stored)
-    setShowBanner(stored === null)
-    setReady(true)
-  }, [])
+export function CookieConsent() {
+  const [consent, setConsent] = useState<ConsentState>(() => readStorage())
+  const [showBanner, setShowBanner] = useState(() => readStorage() === null)
+  const gaId = process.env.NEXT_PUBLIC_GA_ID
 
   useEffect(() => {
     const handler = () => setShowBanner(true)
@@ -42,11 +39,8 @@ export function CookieConsent() {
     }
   }
 
-  if (!ready) return null
-
   return (
     <>
-      {/* Load GA4 only after explicit consent */}
       {consent === 'accepted' && gaId && (
         <>
           <Script
@@ -68,7 +62,6 @@ export function CookieConsent() {
         </>
       )}
 
-      {/* Banner — shown when no preference saved, or user reopens via footer */}
       {showBanner && (
         <div
           role="dialog"

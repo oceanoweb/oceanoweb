@@ -3,15 +3,18 @@
 import Link from 'next/link'
 import { ArrowRight, CheckCircle2, ChevronDown } from 'lucide-react'
 import { useLanguage } from '@/lib/language-context'
+import { useLeadMagnet } from '@/components/lead-magnet-provider'
 import { WHATSAPP_LINK } from '@/lib/site-config'
 import type { ServiceData } from '@/lib/services-data'
 
 interface ServicePageContentProps {
-  service: ServiceData
+  readonly service: ServiceData
 }
 
-export default function ServicePageContent({ service }: ServicePageContentProps) {
+export default function ServicePageContent({ service }: Readonly<ServicePageContentProps>) {
   const { t } = useLanguage()
+  const { openModal } = useLeadMagnet()
+  const lm = t.leadMagnet
 
   return (
     <main>
@@ -132,6 +135,22 @@ export default function ServicePageContent({ service }: ServicePageContentProps)
                 </p>
               </details>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-20">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="rounded-2xl border border-primary/20 bg-card px-8 py-10 text-center md:px-16">
+            <p className="text-base leading-relaxed text-muted-foreground">
+              {lm.serviceDescription}
+            </p>
+            <button
+              onClick={openModal}
+              className="mt-6 inline-flex items-center rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition hover:bg-primary/90"
+            >
+              {lm.serviceCta}
+            </button>
           </div>
         </div>
       </section>
