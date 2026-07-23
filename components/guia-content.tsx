@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { CheckCircle2 } from 'lucide-react'
+import { CircleCheckBig } from 'lucide-react'
 import { useLanguage } from '@/lib/language-context'
 import { BrevoForm } from '@/components/brevo-form'
 
@@ -29,9 +29,9 @@ export function GuiaContent() {
         <p className="mt-4 text-base leading-relaxed text-muted-foreground">{guia.subtitle}</p>
 
         <ul className="mt-8 flex flex-col gap-3 text-left">
-          {guia.benefits.map((benefit) => (
+          {guia.benefits.map(benefit => (
             <li key={benefit} className="flex items-center gap-3">
-              <CheckCircle2 className="h-5 w-5 shrink-0 text-primary" />
+              <CircleCheckBig className="h-5 w-5 shrink-0 text-primary" />
               <span className="text-sm text-foreground">{benefit}</span>
             </li>
           ))}

@@ -537,7 +537,7 @@ export const translations = {
         {
           question: 'What technologies and platforms do you use?',
           answer:
-            'We work with leading market platforms: Google Cloud, Microsoft Azure, OpenAI, Meta, HubSpot, among others. The technology choice is always based on what best serves the client\'s objectives.',
+            "We work with leading market platforms: Google Cloud, Microsoft Azure, OpenAI, Meta, HubSpot, among others. The technology choice is always based on what best serves the client's objectives.",
         },
         {
           question: 'How do you measure results?',
@@ -651,7 +651,8 @@ export const translations = {
       serviceDescription:
         'Download the free guide and see what you can already automate in your business.',
       serviceCta: 'Download the free guide →',
-      blogText: 'Reading about automation? Download the guide with 10 ready-to-implement processes.',
+      blogText:
+        'Reading about automation? Download the guide with 10 ready-to-implement processes.',
       blogCta: 'Download free →',
       guia: {
         subtitle:

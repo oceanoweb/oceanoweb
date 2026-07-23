@@ -5,12 +5,7 @@ import { usePathname } from 'next/navigation'
 import { X } from 'lucide-react'
 import { useLeadMagnet } from '@/components/lead-magnet-provider'
 import { useLanguage } from '@/lib/language-context'
-import {
-  getCookie,
-  setCookie,
-  LEAD_SUBMITTED_COOKIE,
-  BANNER_DISMISSED_COOKIE,
-} from '@/lib/cookies'
+import { getCookie, setCookie, LEAD_SUBMITTED_COOKIE, BANNER_DISMISSED_COOKIE } from '@/lib/cookies'
 
 const BANNER_HEIGHT = '40px'
 const HIDDEN_PATHS = new Set(['/obrigado', '/guia'])

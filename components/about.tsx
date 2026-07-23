@@ -1,6 +1,6 @@
 'use client'
 
-import { CheckCircle2 } from 'lucide-react'
+import { CircleCheckBig } from 'lucide-react'
 import Image from 'next/image'
 import { useLanguage } from '@/lib/language-context'
 import { BrandIcon } from '@/components/brand-icon'
@@ -72,7 +72,7 @@ export function About() {
             <ul className="mt-8 flex flex-col gap-4">
               {t.about.highlights.map(item => (
                 <li key={item} className="flex items-center gap-3">
-                  <CheckCircle2 className="h-5 w-5 shrink-0 text-primary" />
+                  <CircleCheckBig className="h-5 w-5 shrink-0 text-primary" />
                   <span className="text-sm text-foreground">{item}</span>
                 </li>
               ))}

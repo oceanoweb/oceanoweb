@@ -66,7 +66,15 @@ interface BlogPostContentProps {
   readonly post: BlogPost
 }
 
-function BlogLeadMagnetBanner({ onOpen, text, cta }: { readonly onOpen: () => void; readonly text: string; readonly cta: string }) {
+function BlogLeadMagnetBanner({
+  onOpen,
+  text,
+  cta,
+}: {
+  readonly onOpen: () => void
+  readonly text: string
+  readonly cta: string
+}) {
   return (
     <div className="my-8 rounded-xl border border-primary/20 bg-background px-6 py-6">
       <p className="text-sm font-medium text-foreground">{text}</p>
@@ -133,7 +141,12 @@ export function BlogPostContent({ post }: BlogPostContentProps) {
                     return (
                       <>
                         {el}
-                        <BlogLeadMagnetBanner key="lm-banner" onOpen={openModal} text={lm.blogText} cta={lm.blogCta} />
+                        <BlogLeadMagnetBanner
+                          key="lm-banner"
+                          onOpen={openModal}
+                          text={lm.blogText}
+                          cta={lm.blogCta}
+                        />
                       </>
                     )
                   }

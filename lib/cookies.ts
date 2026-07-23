@@ -4,7 +4,7 @@ export const BANNER_DISMISSED_COOKIE = 'banner_dismissed'
 
 export function getCookie(name: string): string | null {
   if (typeof document === 'undefined') return null
-  const match = document.cookie.split(';').find((c) => c.trim().startsWith(`${name}=`))
+  const match = document.cookie.split(';').find(c => c.trim().startsWith(`${name}=`))
   return match ? match.trim().slice(name.length + 1) : null
 }
 

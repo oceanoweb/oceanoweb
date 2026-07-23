@@ -62,7 +62,10 @@ export function LeadMagnetModal({ onClose, onSubmitted }: LeadMagnetModalProps) 
         aria-hidden="true"
       />
 
-      <div ref={contentRef} className="relative w-full max-w-md rounded-2xl border border-primary/20 bg-background p-8 shadow-2xl">
+      <div
+        ref={contentRef}
+        className="relative w-full max-w-md rounded-2xl border border-primary/20 bg-background p-8 shadow-2xl"
+      >
         <button
           onClick={onClose}
           aria-label={lm.closeModal}
@@ -75,13 +78,14 @@ export function LeadMagnetModal({ onClose, onSubmitted }: LeadMagnetModalProps) 
           {lm.badge}
         </span>
 
-        <h2 id="lm-title" className="mt-4 font-heading text-2xl font-bold leading-snug text-foreground">
+        <h2
+          id="lm-title"
+          className="mt-4 font-heading text-2xl font-bold leading-snug text-foreground"
+        >
           {lm.title}
         </h2>
 
-        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-          {lm.modalDescription}
-        </p>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{lm.modalDescription}</p>
 
         <div className="mt-6">
           <BrevoForm compact onSubmitted={onSubmitted} />

@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { CheckCircle2 } from 'lucide-react'
+import { CircleCheckBig } from 'lucide-react'
 import { useLanguage } from '@/lib/language-context'
 
 export function ObrigadoContent() {
@@ -18,7 +18,7 @@ export function ObrigadoContent() {
 
         <div className="mb-6 flex justify-center">
           <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
-            <CheckCircle2 className="h-8 w-8 text-primary" />
+            <CircleCheckBig className="h-8 w-8 text-primary" />
           </div>
         </div>
 

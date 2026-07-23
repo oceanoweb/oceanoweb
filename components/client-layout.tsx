@@ -3,11 +3,11 @@
 import dynamic from 'next/dynamic'
 
 const TopBanner = dynamic(
-  () => import('@/components/top-banner').then((m) => ({ default: m.TopBanner })),
+  () => import('@/components/top-banner').then(m => ({ default: m.TopBanner })),
   { ssr: false }
 )
 const CookieConsent = dynamic(
-  () => import('@/components/cookie-consent').then((m) => ({ default: m.CookieConsent })),
+  () => import('@/components/cookie-consent').then(m => ({ default: m.CookieConsent })),
   { ssr: false }
 )
 

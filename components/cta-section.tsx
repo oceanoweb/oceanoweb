@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState } from 'react'
-import { ArrowRight, Mail, CheckCircle2, AlertCircle, Phone } from 'lucide-react'
+import { ArrowRight, Mail, CircleCheckBig, CircleAlert, Phone } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { useLanguage } from '@/lib/language-context'
 import { BrandIcon } from '@/components/brand-icon'
@@ -44,7 +44,10 @@ export function CtaSection() {
   return (
     <section id="contato" className="relative py-16 md:py-24 overflow-hidden">
       <div className="absolute inset-0 bg-secondary" />
-      <div className="absolute inset-0 hidden overflow-hidden pointer-events-none md:block" aria-hidden="true">
+      <div
+        className="absolute inset-0 hidden overflow-hidden pointer-events-none md:block"
+        aria-hidden="true"
+      >
         <div className="absolute -top-24 -right-24 h-96 w-96 rounded-full bg-primary/5 blur-3xl" />
         <div className="absolute -bottom-24 -left-24 h-96 w-96 rounded-full bg-primary/5 blur-3xl" />
       </div>
@@ -104,7 +107,7 @@ export function CtaSection() {
             {submitted ? (
               <div className="flex flex-col items-center justify-center py-12 text-center">
                 <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
-                  <CheckCircle2 className="h-8 w-8 text-primary" />
+                  <CircleCheckBig className="h-8 w-8 text-primary" />
                 </div>
                 <h3 className="mt-6 font-heading text-xl font-semibold text-foreground">
                   {t.cta.successTitle}
@@ -115,7 +118,7 @@ export function CtaSection() {
               <form onSubmit={handleSubmit} className="flex flex-col gap-5">
                 {error && (
                   <div className="flex gap-3 rounded-lg border border-red-200 bg-red-50 p-4">
-                    <AlertCircle className="h-5 w-5 shrink-0 text-red-600" />
+                    <CircleAlert className="h-5 w-5 shrink-0 text-red-600" />
                     <p className="text-sm text-red-800">{error}</p>
                   </div>
                 )}

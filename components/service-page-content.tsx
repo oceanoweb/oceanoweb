@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { ArrowRight, CheckCircle2, ChevronDown } from 'lucide-react'
+import { ArrowRight, CircleCheckBig, ChevronDown } from 'lucide-react'
 import { useLanguage } from '@/lib/language-context'
 import { useLeadMagnet } from '@/components/lead-magnet-provider'
 import { WHATSAPP_LINK } from '@/lib/site-config'
@@ -73,7 +73,7 @@ export default function ServicePageContent({ service }: Readonly<ServicePageCont
                 className="rounded-2xl border border-border bg-card p-6 hover:border-primary/40 transition-colors"
               >
                 <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10">
-                  <CheckCircle2 className="h-5 w-5 text-primary" />
+                  <CircleCheckBig className="h-5 w-5 text-primary" />
                 </div>
                 <h3 className="font-heading text-base font-semibold text-foreground">
                   {benefit.title}

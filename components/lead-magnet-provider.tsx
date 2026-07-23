@@ -3,12 +3,7 @@
 import { createContext, useCallback, useContext, useEffect, useRef, useState } from 'react'
 import { usePathname } from 'next/navigation'
 import { LeadMagnetModal } from '@/components/lead-magnet-modal'
-import {
-  getCookie,
-  setCookie,
-  LEAD_SUBMITTED_COOKIE,
-  EXIT_DISMISSED_COOKIE,
-} from '@/lib/cookies'
+import { getCookie, setCookie, LEAD_SUBMITTED_COOKIE, EXIT_DISMISSED_COOKIE } from '@/lib/cookies'
 
 interface LeadMagnetContextValue {
   openModal: () => void
@@ -33,8 +28,7 @@ export function LeadMagnetProvider({ children }: { readonly children: React.Reac
   useEffect(() => {
     if (isBlocked) return
 
-    const shouldFire = () =>
-      !getCookie(LEAD_SUBMITTED_COOKIE) && !getCookie(EXIT_DISMISSED_COOKIE)
+    const shouldFire = () => !getCookie(LEAD_SUBMITTED_COOKIE) && !getCookie(EXIT_DISMISSED_COOKIE)
 
     const handleMouseLeave = (e: MouseEvent) => {
       if (!shouldFire() || exitIntentTriggered.current) return

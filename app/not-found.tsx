@@ -9,8 +9,8 @@ export default function NotFound() {
         Página não encontrada
       </h1>
       <p className="mt-4 max-w-md text-lg leading-relaxed text-muted-foreground">
-        A página que procura não existe ou foi removida. Volte à página inicial ou explore os
-        nossos serviços.
+        A página que procura não existe ou foi removida. Volte à página inicial ou explore os nossos
+        serviços.
       </p>
       <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-center">
         <Link

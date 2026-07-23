@@ -105,7 +105,11 @@ export function Header() {
 
       {isMobileMenuOpen && (
         <div className="border-t border-border bg-background/95 backdrop-blur-xl md:hidden">
-          <nav id="mobile-nav" aria-label="Menu de navegação" className="mx-auto flex max-w-7xl flex-col gap-1 px-6 py-4">
+          <nav
+            id="mobile-nav"
+            aria-label="Menu de navegação"
+            className="mx-auto flex max-w-7xl flex-col gap-1 px-6 py-4"
+          >
             {navLinks.map(link => (
               <Link
                 key={link.href}
